@@ -26,6 +26,6 @@
 ## Managers
 
 - Management 1 / Manager
-- Management 2 / Associuate Director
+- Management 2 / Associate Director
 - Management 3 / Director
 - Management 4 / CISO / VP
