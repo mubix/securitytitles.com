@@ -9,7 +9,8 @@
 - Eng 3 / Mid
 - Eng 4 / Senior / Lead
 - Eng 5 / Staff
-- Eng 6 / Principal
+- Eng 6 / Senior Staff
+- Eng 7 / Principal
 
 ## Red Teaming
 
