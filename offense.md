@@ -1,7 +1,5 @@
 # Offensive Professional Titles
 
-## Vulnerability Management
-
 ## Penetration Testing
 
 - Eng 1 / Entry
