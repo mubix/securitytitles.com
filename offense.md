@@ -174,7 +174,7 @@ This page provides standardized job titles, responsibilities, and expectations f
 
 {% endfor %}
 
-<div class="footer-section">
+<div class="footer-section" markdown="1">
 
 ## About This Framework
 
