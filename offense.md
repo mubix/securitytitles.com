@@ -1,7 +1,9 @@
 ---
-layout: default
+layout: fullwidth
 title: Offensive Security Professional Titles
 ---
+
+<div class="intro-section">
 
 # Offensive Security Professional Titles
 
@@ -9,27 +11,30 @@ This page provides standardized job titles, responsibilities, and expectations f
 
 **How to use these tables:**
 - Levels are displayed as columns for easy vertical comparison
-- Scroll horizontally on mobile devices to see all levels
-- Click section headers to navigate directly to each role
+- The attribute column stays fixed while you scroll horizontally
+- Scroll horizontally to compare across all levels
 
----
+<nav class="toc-nav" id="table-of-contents">
+  <strong>Jump to:</strong>
+  <ul>
+    <li><a href="#penetration-testing">Penetration Testing</a></li>
+    <li><a href="#red-teaming---analyst">Red Team Analyst</a></li>
+    <li><a href="#red-teaming---engineer">Red Team Engineer</a></li>
+    <li><a href="#purple-teaming">Purple Team</a></li>
+    <li><a href="#offensive-security-management">Management</a></li>
+  </ul>
+</nav>
 
-## Table of Contents
-
-- [Penetration Testing](#penetration-testing)
-- [Red Teaming - Analyst](#red-teaming---analyst)
-- [Red Teaming - Engineer](#red-teaming---engineer)
-- [Purple Teaming](#purple-teaming)
-- [Offensive Security Management](#offensive-security-management)
-
----
+</div>
 
 {% for role in site.data.offense %}
 {% assign role_data = role[1] %}
 
+<div class="table-section">
+
 <h2 id="{{ role_data.name | slugify }}">{{ role_data.name }}</h2>
 
-<p><em>{{ role_data.description }}</em></p>
+<p>{{ role_data.description }}</p>
 
 <div class="table-responsive">
 <table class="role-table">
@@ -42,7 +47,6 @@ This page provides standardized job titles, responsibilities, and expectations f
     </tr>
   </thead>
   <tbody>
-    <!-- General Description -->
     <tr>
       <td class="attribute-name"><strong>General Description</strong></td>
       {% for level in role_data.levels %}
@@ -50,7 +54,6 @@ This page provides standardized job titles, responsibilities, and expectations f
       {% endfor %}
     </tr>
     
-    <!-- Primary Responsibilities -->
     <tr>
       <td class="attribute-name"><strong>Primary Responsibilities</strong></td>
       {% for level in role_data.levels %}
@@ -64,7 +67,6 @@ This page provides standardized job titles, responsibilities, and expectations f
       {% endfor %}
     </tr>
     
-    <!-- Required Skills -->
     <tr>
       <td class="attribute-name"><strong>Required Skills</strong></td>
       {% for level in role_data.levels %}
@@ -78,7 +80,6 @@ This page provides standardized job titles, responsibilities, and expectations f
       {% endfor %}
     </tr>
     
-    <!-- Preferred Skills -->
     <tr>
       <td class="attribute-name"><strong>Preferred Skills</strong></td>
       {% for level in role_data.levels %}
@@ -92,7 +93,6 @@ This page provides standardized job titles, responsibilities, and expectations f
       {% endfor %}
     </tr>
     
-    <!-- Mentorship Requirements -->
     <tr>
       <td class="attribute-name"><strong>Mentorship Requirements</strong></td>
       {% for level in role_data.levels %}
@@ -100,7 +100,6 @@ This page provides standardized job titles, responsibilities, and expectations f
       {% endfor %}
     </tr>
     
-    <!-- Impact Scope -->
     <tr>
       <td class="attribute-name"><strong>Impact Scope</strong></td>
       {% for level in role_data.levels %}
@@ -108,7 +107,6 @@ This page provides standardized job titles, responsibilities, and expectations f
       {% endfor %}
     </tr>
     
-    <!-- Autonomy and Decision Authority -->
     <tr>
       <td class="attribute-name"><strong>Autonomy &amp; Decision Authority</strong></td>
       {% for level in role_data.levels %}
@@ -116,25 +114,22 @@ This page provides standardized job titles, responsibilities, and expectations f
       {% endfor %}
     </tr>
     
-    <!-- Communication and Stakeholder Responsibility -->
     <tr>
-      <td class="attribute-name"><strong>Communication &amp; Stakeholder Responsibility</strong></td>
+      <td class="attribute-name"><strong>Communication &amp; Stakeholders</strong></td>
       {% for level in role_data.levels %}
       <td>{{ level.communication_stakeholder }}</td>
       {% endfor %}
     </tr>
     
-    <!-- Degree or Equivalent Experience -->
     <tr>
-      <td class="attribute-name"><strong>Degree or Equivalent Experience</strong></td>
+      <td class="attribute-name"><strong>Degree / Experience</strong></td>
       {% for level in role_data.levels %}
       <td>{{ level.degree_equivalent }}</td>
       {% endfor %}
     </tr>
     
-    <!-- Applicable Certifications -->
     <tr>
-      <td class="attribute-name"><strong>Applicable Certifications</strong></td>
+      <td class="attribute-name"><strong>Certifications</strong></td>
       {% for level in role_data.levels %}
       <td>
         <ul class="compact-list">
@@ -146,15 +141,13 @@ This page provides standardized job titles, responsibilities, and expectations f
       {% endfor %}
     </tr>
     
-    <!-- Typical Salary - US Government -->
     <tr class="salary-row">
-      <td class="attribute-name"><strong>Salary: US Government</strong></td>
+      <td class="attribute-name"><strong>Salary: US Gov't</strong></td>
       {% for level in role_data.levels %}
       <td class="salary-cell">{{ level.salary.us_government }}</td>
       {% endfor %}
     </tr>
     
-    <!-- Typical Salary - US Startup -->
     <tr class="salary-row">
       <td class="attribute-name"><strong>Salary: US Startup</strong></td>
       {% for level in role_data.levels %}
@@ -162,7 +155,6 @@ This page provides standardized job titles, responsibilities, and expectations f
       {% endfor %}
     </tr>
     
-    <!-- Typical Salary - US Corporate -->
     <tr class="salary-row">
       <td class="attribute-name"><strong>Salary: US Corporate</strong></td>
       {% for level in role_data.levels %}
@@ -173,11 +165,13 @@ This page provides standardized job titles, responsibilities, and expectations f
 </table>
 </div>
 
-<p><a href="#table-of-contents">↑ Back to top</a></p>
+<a href="#table-of-contents" class="back-to-top">↑ Back to navigation</a>
 
----
+</div>
 
 {% endfor %}
+
+<div class="footer-section">
 
 ## About This Framework
 
@@ -190,9 +184,11 @@ This standardization framework is designed to:
 
 ### Salary Notes
 
-- **US Government**: Based on General Schedule (GS) and Senior Executive Service (SES) pay scales. Actual compensation varies by locality pay area.
-- **US Startup**: Reflects venture-backed companies. Equity compensation can significantly increase total compensation.
-- **US Corporate**: Reflects Fortune 500 and large enterprise compensation. May include bonus structures of 10-30%+.
+| Sector | Notes |
+|--------|-------|
+| **US Government** | Based on General Schedule (GS) and Senior Executive Service (SES) pay scales. Actual compensation varies by locality pay area. |
+| **US Startup** | Reflects venture-backed companies. Equity compensation can significantly increase total compensation. |
+| **US Corporate** | Reflects Fortune 500 and large enterprise compensation. May include bonus structures of 10-30%+. |
 
 All salary figures are estimates based on market data and may vary significantly by geography, company size, industry, and individual negotiation.
 
@@ -200,123 +196,4 @@ All salary figures are estimates based on market data and may vary significantly
 
 This is an open-source effort to standardize security titles. [Join the discussion](https://github.com/mubix/securitytitles.com/discussions) to help improve these frameworks.
 
----
-
-<style>
-.table-responsive {
-  overflow-x: auto;
-  margin-bottom: 1.5rem;
-}
-
-.role-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.9rem;
-  min-width: 1200px;
-}
-
-.role-table th,
-.role-table td {
-  border: 1px solid #ddd;
-  padding: 12px 10px;
-  vertical-align: top;
-  text-align: left;
-}
-
-.role-table thead th {
-  background-color: #2c3e50;
-  color: white;
-  font-weight: 600;
-  position: sticky;
-  top: 0;
-}
-
-.attribute-header {
-  min-width: 180px;
-  width: 180px;
-}
-
-.level-header {
-  min-width: 200px;
-  text-align: center !important;
-}
-
-.attribute-name {
-  background-color: #f8f9fa;
-  font-weight: 500;
-  min-width: 180px;
-  width: 180px;
-}
-
-.role-table tbody tr:nth-child(even) {
-  background-color: #fafafa;
-}
-
-.role-table tbody tr:hover {
-  background-color: #f0f7ff;
-}
-
-.compact-list {
-  margin: 0;
-  padding-left: 18px;
-  font-size: 0.85rem;
-}
-
-.compact-list li {
-  margin-bottom: 4px;
-  line-height: 1.4;
-}
-
-.salary-row {
-  background-color: #e8f5e9 !important;
-}
-
-.salary-row:hover {
-  background-color: #c8e6c9 !important;
-}
-
-.salary-cell {
-  font-weight: 500;
-  color: #2e7d32;
-  white-space: nowrap;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .role-table {
-    font-size: 0.8rem;
-  }
-  
-  .role-table th,
-  .role-table td {
-    padding: 8px 6px;
-  }
-  
-  .attribute-header,
-  .attribute-name {
-    min-width: 140px;
-    width: 140px;
-  }
-  
-  .level-header {
-    min-width: 160px;
-  }
-}
-
-/* Print styles */
-@media print {
-  .table-responsive {
-    overflow: visible;
-  }
-  
-  .role-table {
-    font-size: 0.7rem;
-    min-width: auto;
-  }
-  
-  .role-table th,
-  .role-table td {
-    padding: 4px;
-  }
-}
-</style>
+</div>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | Security Titles</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <style>
+    /* Reset and base styles */
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+    }
+    
+    /* Header */
+    .site-header {
+      background: #2c3e50;
+      color: white;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .site-header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    
+    .site-header a {
+      color: white;
+      text-decoration: none;
+    }
+    
+    .site-header nav {
+      margin-top: 0.5rem;
+    }
+    
+    .site-header nav a {
+      margin-right: 1.5rem;
+      opacity: 0.8;
+    }
+    
+    .site-header nav a:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+    
+    /* Main content - FULL WIDTH */
+    .site-content {
+      padding: 2rem;
+      max-width: 100%;
+    }
+    
+    /* Intro section - constrained width for readability */
+    .intro-section {
+      max-width: 900px;
+      margin-bottom: 2rem;
+    }
+    
+    .intro-section h1 {
+      color: #2c3e50;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 0.5rem;
+    }
+    
+    /* Table sections - FULL WIDTH */
+    .table-section {
+      margin-bottom: 3rem;
+      width: 100%;
+    }
+    
+    .table-section h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ecf0f1;
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+    
+    .table-section > p {
+      max-width: 900px;
+      color: #666;
+      font-style: italic;
+    }
+    
+    /* Table styles */
+    .table-responsive {
+      overflow-x: auto;
+      margin: 1rem 0 2rem 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    
+    .role-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    
+    .role-table th,
+    .role-table td {
+      border: 1px solid #ddd;
+      padding: 12px 10px;
+      vertical-align: top;
+      text-align: left;
+    }
+    
+    .role-table thead th {
+      background: #2c3e50;
+      color: white;
+      font-weight: 600;
+      position: sticky;
+      top: 60px; /* Account for site header */
+      z-index: 10;
+    }
+    
+    .attribute-header {
+      width: 200px;
+      min-width: 200px;
+    }
+    
+    .level-header {
+      min-width: 240px;
+      text-align: center !important;
+    }
+    
+    .attribute-name {
+      background: #f8f9fa;
+      font-weight: 500;
+      width: 200px;
+      min-width: 200px;
+      position: sticky;
+      left: 0;
+      z-index: 5;
+      border-right: 2px solid #ddd;
+    }
+    
+    .role-table thead th:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 15;
+      border-right: 2px solid #bdc3c7;
+    }
+    
+    .role-table tbody tr:nth-child(even) td {
+      background: #fafafa;
+    }
+    
+    .role-table tbody tr:nth-child(even) td.attribute-name {
+      background: #f0f0f0;
+    }
+    
+    .role-table tbody tr:hover td {
+      background: #e8f4fc;
+    }
+    
+    .role-table tbody tr:hover td.attribute-name {
+      background: #d4e9f7;
+    }
+    
+    .compact-list {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 0.85rem;
+    }
+    
+    .compact-list li {
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    
+    /* Salary rows */
+    .salary-row td {
+      background: #e8f5e9 !important;
+    }
+    
+    .salary-row td.attribute-name {
+      background: #c8e6c9 !important;
+    }
+    
+    .salary-row:hover td {
+      background: #c8e6c9 !important;
+    }
+    
+    .salary-row:hover td.attribute-name {
+      background: #a5d6a7 !important;
+    }
+    
+    .salary-cell {
+      font-weight: 500;
+      color: #2e7d32;
+      white-space: nowrap;
+    }
+    
+    /* Navigation */
+    .toc-nav {
+      background: #ecf0f1;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+      max-width: fit-content;
+    }
+    
+    .toc-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 2rem;
+    }
+    
+    .toc-nav li {
+      margin: 0;
+    }
+    
+    .toc-nav a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #2c3e50;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    
+    .toc-nav a:hover {
+      background: #3498db;
+      color: white;
+    }
+    
+    .back-to-top {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #3498db;
+    }
+    
+    /* Footer section - constrained */
+    .footer-section {
+      max-width: 900px;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 2px solid #ecf0f1;
+    }
+    
+    .footer-section h2,
+    .footer-section h3 {
+      color: #2c3e50;
+    }
+    
+    .footer-section table {
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    
+    .footer-section th,
+    .footer-section td {
+      border: 1px solid #ddd;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    
+    .footer-section th {
+      background: #f8f9fa;
+    }
+    
+    /* Site footer */
+    .site-footer {
+      background: #2c3e50;
+      color: white;
+      padding: 2rem;
+      margin-top: 3rem;
+      text-align: center;
+    }
+    
+    .site-footer a {
+      color: #3498db;
+    }
+    
+    /* Responsive */
+    @media (max-width: 1200px) {
+      .role-table {
+        font-size: 0.85rem;
+      }
+      
+      .level-header {
+        min-width: 200px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .site-content {
+        padding: 1rem;
+      }
+      
+      .role-table {
+        font-size: 0.8rem;
+      }
+      
+      .role-table th,
+      .role-table td {
+        padding: 8px 6px;
+      }
+      
+      .attribute-header,
+      .attribute-name {
+        width: 140px;
+        min-width: 140px;
+      }
+      
+      .level-header {
+        min-width: 180px;
+      }
+      
+      .toc-nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      
+      .site-header {
+        padding: 1rem;
+      }
+      
+      .site-header nav a {
+        display: block;
+        margin: 0.25rem 0;
+      }
+    }
+    
+    /* Print */
+    @media print {
+      .site-header,
+      .site-footer,
+      .back-to-top,
+      .toc-nav {
+        display: none;
+      }
+      
+      .table-responsive {
+        overflow: visible;
+      }
+      
+      .role-table {
+        font-size: 0.65rem;
+      }
+      
+      .attribute-name,
+      .role-table thead th:first-child {
+        position: static;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1><a href="{{ '/' | relative_url }}">Security Titles</a></h1>
+    <nav>
+      <a href="{{ '/offense' | relative_url }}">Offense</a>
+      <a href="{{ '/defense' | relative_url }}">Defense</a>
+      <a href="https://github.com/mubix/securitytitles.com/discussions">Discuss</a>
+    </nav>
+  </header>
+  
+  <main class="site-content">
+    {{ content }}
+  </main>
+  
+  <footer class="site-footer">
+    <p>
+      <strong>Security Titles</strong> - An open-source effort to standardize security job titles<br>
+      <a href="https://github.com/mubix/securitytitles.com">GitHub</a> | 
+      <a href="https://github.com/mubix/securitytitles.com/discussions">Join the Discussion</a>
+    </p>
+  </footer>
+</body>
+</html>
