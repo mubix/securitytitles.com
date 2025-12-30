@@ -177,7 +177,7 @@ We welcome contributions from the security community! Here's how you can help:
 This project is licensed under the **BSD 3-Clause License** — see the [LICENSE](LICENSE) file for details.
 
 ```
-Copyright (c) 2021, Rob Fuller
+Copyright (c) 2025, Rob Fuller
 All rights reserved.
 ```
 
