@@ -5,14 +5,17 @@ title: Offensive Security Professional Titles
 
 <div class="intro-section">
 
-# Offensive Security Professional Titles
-
+<h1>Offensive Security Professional Titles</h1>
+<br>
 This page provides standardized job titles, responsibilities, and expectations for offensive security professionals. Use these frameworks to understand career progression, set role expectations, and benchmark compensation.
-
-**How to use these tables:**
-- Levels are displayed as columns for easy vertical comparison
-- The attribute column stays fixed while you scroll horizontally
-- Scroll horizontally to compare across all levels
+<br>
+<b>How to use these tables:</b>
+<br>
+<ul>
+  <li>Levels are displayed as columns for easy vertical comparison</li>
+  <li>The attribute column stays fixed while you scroll horizontally</li>
+  <li>Scroll horizontally to compare across all levels</li>
+</ul>
 
 <nav class="toc-nav" id="table-of-contents">
   <strong>Jump to:</strong>
