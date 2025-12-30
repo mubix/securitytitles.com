@@ -24,33 +24,86 @@
     .site-header {
       background: #2c3e50;
       color: white;
-      padding: 1rem 2rem;
+      padding: 0;
       position: sticky;
       top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 2rem;
+      max-width: 100%;
     }
     
     .site-header h1 {
       margin: 0;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
     
-    .site-header a {
+    .site-header h1 a {
       color: white;
       text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
     
-    .site-header nav {
-      margin-top: 0.5rem;
+    .site-header h1 a:hover {
+      opacity: 0.9;
     }
     
-    .site-header nav a {
-      margin-right: 1.5rem;
+    /* Main Navigation */
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .main-nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+    }
+    
+    .main-nav a:hover {
+      background: rgba(255,255,255,0.15);
+    }
+    
+    .main-nav a.active {
+      background: rgba(255,255,255,0.2);
+    }
+    
+    .nav-divider {
+      color: rgba(255,255,255,0.3);
+      margin: 0 0.25rem;
+    }
+    
+    .nav-external {
       opacity: 0.8;
+      font-size: 0.85rem;
     }
     
-    .site-header nav a:hover {
+    .nav-external:hover {
       opacity: 1;
-      text-decoration: underline;
+    }
+    
+    /* Mobile menu toggle */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 0.5rem;
     }
     
     /* Main content - FULL WIDTH */
@@ -296,6 +349,39 @@
     }
     
     @media (max-width: 768px) {
+      .header-content {
+        flex-wrap: wrap;
+        padding: 0.75rem 1rem;
+      }
+      
+      .menu-toggle {
+        display: block;
+      }
+      
+      .main-nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        margin-top: 0.75rem;
+        padding-top: 0.75rem;
+        border-top: 1px solid rgba(255,255,255,0.2);
+      }
+      
+      .main-nav.active {
+        display: flex;
+      }
+      
+      .main-nav a {
+        padding: 0.75rem 1rem;
+        border-radius: 0;
+      }
+      
+      .nav-divider {
+        display: none;
+      }
+      
       .site-content {
         padding: 1rem;
       }
@@ -322,15 +408,6 @@
       .toc-nav ul {
         flex-direction: column;
         gap: 0.5rem;
-      }
-      
-      .site-header {
-        padding: 1rem;
-      }
-      
-      .site-header nav a {
-        display: block;
-        margin: 0.25rem 0;
       }
     }
     
@@ -360,12 +437,26 @@
 </head>
 <body>
   <header class="site-header">
-    <h1><a href="{{ '/' | relative_url }}">Security Titles</a></h1>
-    <nav>
-      <a href="{{ '/offense' | relative_url }}">Offense</a>
-      <a href="{{ '/defense' | relative_url }}">Defense</a>
-      <a href="https://github.com/mubix/securitytitles.com/discussions">Discuss</a>
-    </nav>
+    <div class="header-content">
+      <h1>
+        <a href="{{ '/' | relative_url }}">
+          <span>🔐</span> Security Titles
+        </a>
+      </h1>
+      
+      <button class="menu-toggle" onclick="document.querySelector('.main-nav').classList.toggle('active')">
+        ☰
+      </button>
+      
+      <nav class="main-nav">
+        <a href="{{ '/offense' | relative_url }}" {% if page.url contains '/offense' %}class="active"{% endif %}>Offense</a>
+        <a href="{{ '/defense' | relative_url }}" {% if page.url contains '/defense' %}class="active"{% endif %}>Defense</a>
+        <a href="{{ '/specialized' | relative_url }}" {% if page.url contains '/specialized' %}class="active"{% endif %}>Specialized</a>
+        <span class="nav-divider">|</span>
+        <a href="https://github.com/mubix/securitytitles.com/discussions" class="nav-external">💬 Discuss</a>
+        <a href="https://github.com/mubix/securitytitles.com" class="nav-external">📦 GitHub</a>
+      </nav>
+    </div>
   </header>
   
   <main class="site-content">
@@ -374,7 +465,7 @@
   
   <footer class="site-footer">
     <p>
-      <strong>Security Titles</strong> - An open-source effort to standardize security job titles<br>
+      <strong>Security Titles</strong> — An open-source effort to standardize security job titles<br>
       <a href="https://github.com/mubix/securitytitles.com">GitHub</a> | 
       <a href="https://github.com/mubix/securitytitles.com/discussions">Join the Discussion</a>
     </p>
