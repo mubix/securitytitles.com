@@ -1,4 +1,4 @@
-# Defese Professional Titles
+# Defense Professional Titles
 
 ## Soc Analyst
 
