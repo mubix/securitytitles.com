@@ -1,5 +1,5 @@
-penetration_testing:
-  name: "Penetration Testing"
+penetration_tester:
+  name: "Penetration Tester"
   description: "Professionals who assess security by simulating attacks against systems, networks, and applications to identify vulnerabilities before malicious actors can exploit them."
   levels:
     - id: "eng1"

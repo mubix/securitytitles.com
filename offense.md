@@ -20,7 +20,7 @@ This page provides standardized job titles, responsibilities, and expectations f
 <nav class="toc-nav" id="table-of-contents">
   <strong>Jump to:</strong>
   <ul>
-    <li><a href="#penetration-testing">Penetration Testing</a></li>
+    <li><a href="#penetration-tester">Penetration Tester</a></li>
     <li><a href="#red-team-analyst">Red Team Analyst</a></li>
     <li><a href="#red-team-engineer">Red Team Engineer</a></li>
     <li><a href="#purple-team">Purple Team</a></li>
