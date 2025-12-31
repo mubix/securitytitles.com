@@ -80,6 +80,23 @@ An open-source framework for consistent job titles, levels, and expectations acr
     </div>
   </a>
 
+  <a href="/leadership" style="text-decoration: none;">
+    <div style="background: #fff; border: 2px solid #f39c12; border-radius: 12px; padding: 1.5rem; transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+      <h3 style="color: #f39c12; margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
+        <span style="font-size: 1.5rem;">👔</span> Leadership
+      </h3>
+      <p style="color: #666; margin-bottom: 0.75rem;">
+        Executive and senior leadership roles spanning all security functions, from Director to CISO.
+      </p>
+      <ul style="color: #888; font-size: 0.9rem; margin: 0; padding-left: 1.25rem;">
+        <li>Director</li>
+        <li>Senior Director</li>
+        <li>VP / SVP</li>
+        <li>CISO</li>
+      </ul>
+    </div>
+  </a>
+
 </div>
 
 </div>
