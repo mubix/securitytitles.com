@@ -81,6 +81,22 @@ An open-source framework for consistent job titles, levels, and expectations acr
     </div>
   </a>
 
+  <a href="/iam" style="text-decoration: none;">
+    <div style="background: #fff; border: 2px solid #8e44ad; border-radius: 12px; padding: 1.5rem; transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+      <h3 style="color: #8e44ad; margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
+        <span style="font-size: 1.5rem;">🔑</span> IAM
+      </h3>
+      <p style="color: #666; margin-bottom: 0.75rem;">
+        Identity and Access Management professionals covering governance, authentication, privileged access, and identity security.
+      </p>
+      <ul style="color: #888; font-size: 0.9rem; margin: 0; padding-left: 1.25rem;">
+        <li>IGA, Access Mgmt, PAM, Directory Services</li>
+        <li>CIAM, IAM Architect</li>
+        <li>Identity Security Analyst & Engineer (ITDR)</li>
+      </ul>
+    </div>
+  </a>
+
   <a href="/specialized" style="text-decoration: none;">
     <div style="background: #fff; border: 2px solid #9b59b6; border-radius: 12px; padding: 1.5rem; transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
       <h3 style="color: #9b59b6; margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
@@ -92,7 +108,7 @@ An open-source framework for consistent job titles, levels, and expectations acr
       <ul style="color: #888; font-size: 0.9rem; margin: 0; padding-left: 1.25rem;">
         <li>EVM, AppSec, CloudSec (Engineer & Architect tracks)</li>
         <li>Forensic Analyst, CTI Analyst & Engineer</li>
-        <li><em>Coming: IAM, Info Protection, OT Security...</em></li>
+        <li><em>Coming: Info Protection, OT Security...</em></li>
       </ul>
     </div>
   </a>
