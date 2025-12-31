@@ -826,7 +826,6 @@ All salary figures are estimates based on market data and may vary significantly
 ### Coming Soon
 
 Additional specialized roles in development:
-- Governance, Risk & Compliance (GRC)
 - Identity & Access Management (IAM)
 - Information Protection
 - OT Security

@@ -64,6 +64,23 @@ An open-source framework for consistent job titles, levels, and expectations acr
     </div>
   </a>
 
+  <a href="/grc" style="text-decoration: none;">
+    <div style="background: #fff; border: 2px solid #27ae60; border-radius: 12px; padding: 1.5rem; transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+      <h3 style="color: #27ae60; margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
+        <span style="font-size: 1.5rem;">📋</span> GRC
+      </h3>
+      <p style="color: #666; margin-bottom: 0.75rem;">
+        Governance, Risk & Compliance professionals who enable the business through risk management, compliance, and policy.
+      </p>
+      <ul style="color: #888; font-size: 0.9rem; margin: 0; padding-left: 1.25rem;">
+        <li>Risk Analyst (7 levels)</li>
+        <li>Compliance Analyst (7 levels)</li>
+        <li>Governance Analyst (7 levels)</li>
+        <li>GRC Engineer (7 levels)</li>
+      </ul>
+    </div>
+  </a>
+
   <a href="/specialized" style="text-decoration: none;">
     <div style="background: #fff; border: 2px solid #9b59b6; border-radius: 12px; padding: 1.5rem; transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
       <h3 style="color: #9b59b6; margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
@@ -75,7 +92,7 @@ An open-source framework for consistent job titles, levels, and expectations acr
       <ul style="color: #888; font-size: 0.9rem; margin: 0; padding-left: 1.25rem;">
         <li>EVM, AppSec, CloudSec (Engineer & Architect tracks)</li>
         <li>Forensic Analyst, CTI Analyst & Engineer</li>
-        <li><em>Coming: GRC, IAM, Info Protection...</em></li>
+        <li><em>Coming: IAM, Info Protection, OT Security...</em></li>
       </ul>
     </div>
   </a>
