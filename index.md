@@ -70,12 +70,12 @@ An open-source framework for consistent job titles, levels, and expectations acr
         <span style="font-size: 1.5rem;">🔬</span> Specialized Roles
       </h3>
       <p style="color: #666; margin-bottom: 0.75rem;">
-        Cross-functional and domain-specific security roles including vulnerability management.
+        Cross-functional and domain-specific security roles including vulnerability management and application security.
       </p>
       <ul style="color: #888; font-size: 0.9rem; margin: 0; padding-left: 1.25rem;">
-        <li>EVM Analyst (7 levels)</li>
-        <li>EVM Engineer (7 levels)</li>
-        <li><em>Coming: AppSec, CloudSec, CTI, GRC...</em></li>
+        <li>EVM Analyst & Engineer (7 levels each)</li>
+        <li>AppSec Engineer & Architect (7 levels each)</li>
+        <li><em>Coming: CloudSec, CTI, GRC...</em></li>
       </ul>
     </div>
   </a>
