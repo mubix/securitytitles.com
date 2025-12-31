@@ -292,7 +292,7 @@ penetration_testing:
         us_corporate: "$250,000 - $350,000+"
 
 red_team_analyst:
-  name: "Red Teaming - Analyst"
+  name: "Red Team - Analyst"
   description: "Professionals who simulate advanced persistent threats (APTs) to test organizational detection and response capabilities. Analysts focus on threat intelligence, campaign planning, social engineering, and adversary emulation strategy."
   levels:
     - id: "analyst1"
@@ -572,7 +572,7 @@ red_team_analyst:
         us_corporate: "$240,000 - $330,000+"
 
 red_team_engineer:
-  name: "Red Teaming - Engineer"
+  name: "Red Team - Engineer"
   description: "Technical practitioners who build and operate red team infrastructure, develop custom tools and implants, and execute sophisticated attack chains. Engineers focus on the technical execution of adversary emulation campaigns."
   levels:
     - id: "eng1"
@@ -854,7 +854,7 @@ red_team_engineer:
         us_corporate: "$255,000 - $360,000+"
 
 purple_team:
-  name: "Purple Teaming"
+  name: "Purple Team"
   description: "Professionals who bridge offensive and defensive security by facilitating collaboration between red and blue teams. Focus on improving detection capabilities, validating security controls, and enabling continuous security improvement through adversary simulation."
   levels:
     - id: "specialist1"
