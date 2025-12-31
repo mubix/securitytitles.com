@@ -21,8 +21,8 @@ This page provides standardized job titles, responsibilities, and expectations f
   <strong>Jump to:</strong>
   <ul>
     <li><a href="#penetration-testing">Penetration Testing</a></li>
-    <li><a href="#red-teaming---analyst">Red Team Analyst</a></li>
-    <li><a href="#red-teaming---engineer">Red Team Engineer</a></li>
+    <li><a href="#red-teaming-analyst">Red Team Analyst</a></li>
+    <li><a href="#red-teaming-engineer">Red Team Engineer</a></li>
     <li><a href="#purple-teaming">Purple Team</a></li>
     <li><a href="#offensive-security-management">Management</a></li>
   </ul>
