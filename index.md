@@ -70,12 +70,12 @@ An open-source framework for consistent job titles, levels, and expectations acr
         <span style="font-size: 1.5rem;">🔬</span> Specialized Roles
       </h3>
       <p style="color: #666; margin-bottom: 0.75rem;">
-        Cross-functional and domain-specific security roles including vulnerability management, application security, cloud security, and digital forensics.
+        Cross-functional and domain-specific security roles including vulnerability management, application security, cloud security, forensics, and threat intelligence.
       </p>
       <ul style="color: #888; font-size: 0.9rem; margin: 0; padding-left: 1.25rem;">
         <li>EVM, AppSec, CloudSec (Engineer & Architect tracks)</li>
-        <li>Forensic Analyst (7 levels)</li>
-        <li><em>Coming: CTI, GRC, IAM...</em></li>
+        <li>Forensic Analyst, CTI Analyst & Engineer</li>
+        <li><em>Coming: GRC, IAM, Info Protection...</em></li>
       </ul>
     </div>
   </a>
