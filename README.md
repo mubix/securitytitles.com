@@ -1,5 +1,3 @@
-# Security Titles
-
 ![Security Titles Logo](logo.png)
 
 **An open-source effort to standardize security job titles, levels, and expectations across the cybersecurity industry.**
@@ -46,10 +44,37 @@ The cybersecurity industry lacks consistent standards for job titles and levels.
 - **Security Architects** — Strategic security design and frameworks
 - **Defensive Security Management** — Team leads through Directors
 
+### Governance, Risk & Compliance (GRC)
+- **Risk Analysts** — Enterprise risk assessment and management
+- **Compliance Analysts** — Regulatory compliance and audit management
+- **Governance Analysts** — Policy development and security governance
+- **GRC Engineers** — GRC platforms and automation
+
+### Identity & Access Management (IAM)
+- **Identity Governance & Administration** — IGA strategy and implementation
+- **Access Management** — SSO, MFA, and authentication systems
+- **Privileged Access Management** — PAM solutions and privileged credential management
+- **Directory Services** — Active Directory and LDAP administration
+- **Customer IAM** — CIAM platforms and customer authentication
+- **IAM Architects** — Identity strategy and architecture
+- **Identity Security** — Identity Threat Detection and Response (ITDR)
+
 ### Specialized Roles
+- **AppSec Engineers** — Application security throughout the SDLC
+- **AppSec Architects** — Application security strategy and design
+- **Cloud Security Engineers** — Cloud infrastructure security and DevSecOps
+- **Cloud Security Architects** — Cloud security strategy and architecture
 - **EVM Analysts** — Enterprise Vulnerability Management strategy and prioritization
 - **EVM Engineers** — Vulnerability scanning platforms and infrastructure
-- *Coming Soon:* AppSec, Cloud Security, Digital Forensics, CTI, GRC, OT Security
+- **Digital Forensics Analysts** — Incident investigation and forensic analysis
+- **CTI Analysts** — Cyber Threat Intelligence research and analysis
+- **CTI Engineers** — Threat intelligence platforms and automation
+
+### Leadership
+- **Director** — Security program leadership and strategy
+- **Senior Director** — Multi-department security leadership
+- **VP/SVP** — Enterprise-wide security strategy
+- **CISO** — Chief Information Security Officer
 
 ---
 
@@ -60,13 +85,23 @@ securitytitles.com/
 ├── _data/                    # YAML data files (the core content)
 │   ├── offense.yml           # Offensive security role definitions
 │   ├── defense.yml           # Defensive security role definitions
-│   └── evm.yml               # Enterprise Vulnerability Management roles
+│   ├── grc.yml               # Governance, Risk & Compliance roles
+│   ├── iam.yml               # Identity & Access Management roles
+│   ├── appsec.yml            # Application Security roles
+│   ├── cloudsec.yml          # Cloud Security roles
+│   ├── evm.yml               # Enterprise Vulnerability Management roles
+│   ├── forensics.yml         # Digital Forensics roles
+│   ├── cti.yml               # Cyber Threat Intelligence roles
+│   └── leadership.yml        # Security Leadership roles
 ├── _layouts/                 # Jekyll layout templates
 │   └── fullwidth.html        # Main page layout with styling
 ├── index.md                  # Homepage
 ├── offense.md                # Offensive security page
 ├── defense.md                # Defensive security page
+├── grc.md                    # GRC page
+├── iam.md                    # IAM page
 ├── specialized.md            # Specialized roles page
+├── leadership.md             # Leadership page
 ├── CNAME                     # Custom domain configuration
 ├── LICENSE                   # BSD 3-Clause License
 └── README.md                 # This file
