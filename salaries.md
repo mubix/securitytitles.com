@@ -11,6 +11,10 @@ title: Salary Heatmap
 Every role and level at a glance, color-coded by compensation band. Click any cell to jump to the full role detail. Filter by sector to see how pay differs across government, startups, and corporate employers.
 </p>
 
+<p style="background: var(--bg-tertiary); border: 1px solid var(--border-primary); border-radius: 6px; padding: 0.65rem 1rem; font-size: 0.85rem; color: var(--text-muted); max-width: var(--prose-max);">
+<strong style="color: var(--text-secondary);">Note:</strong> This page is best viewed on a desktop or tablet. The heatmap compares 30+ roles across 7 career levels — a layout that doesn't translate well to phone-sized screens. On mobile, individual role pages provide a better experience.
+</p>
+
 </div>
 
 <div class="heatmap-legend" id="heatmap-legend">

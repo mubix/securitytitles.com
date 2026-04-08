@@ -76,6 +76,11 @@ The cybersecurity industry lacks consistent standards for job titles and levels.
 - **VP/SVP** — Enterprise-wide security strategy
 - **CISO** — Chief Information Security Officer
 
+### Security Consulting
+- **Security Consultant** — Big 4 consulting career ladder (Analyst through Partner)
+- **Virtual CISO (vCISO)** — Firm-employed, multi-client CISO services
+- **Fractional CISO** — Independent part-time CISO for 2-5 organizations
+
 ---
 
 ## 🏗️ Repository Structure
@@ -92,7 +97,8 @@ securitytitles.com/
 │   ├── evm.yml               # Enterprise Vulnerability Management roles
 │   ├── forensics.yml         # Digital Forensics roles
 │   ├── cti.yml               # Cyber Threat Intelligence roles
-│   └── leadership.yml        # Security Leadership roles
+│   ├── leadership.yml        # Security Leadership roles
+│   └── consultant.yml        # Security Consulting, vCISO, Fractional CISO
 ├── _layouts/                 # Jekyll layout templates
 │   └── fullwidth.html        # Main page layout with styling
 ├── index.md                  # Homepage
@@ -102,6 +108,8 @@ securitytitles.com/
 ├── iam.md                    # IAM page
 ├── specialized.md            # Specialized roles page
 ├── leadership.md             # Leadership page
+├── consultant.md             # Security Consulting page
+├── salaries.md               # Salary Heatmap page
 ├── CNAME                     # Custom domain configuration
 ├── LICENSE                   # BSD 3-Clause License
 └── README.md                 # This file
@@ -137,6 +145,7 @@ role_name:
         us_government: "$X - $Y (GS-X to GS-Y)"
         us_startup: "$X - $Y"
         us_corporate: "$X - $Y"
+        us_bigtech: "$X - $Y (Mag7 total comp)"
 ```
 
 ---
@@ -202,6 +211,7 @@ We welcome contributions from the security community! Here's how you can help:
 | **US Government** | Based on General Schedule (GS) and Senior Executive Service (SES) pay scales. Varies by locality. |
 | **US Startup** | Venture-backed companies. Equity can significantly increase total compensation. |
 | **US Corporate** | Fortune 500 and large enterprises. May include 10-30%+ bonus structures. |
+| **Big Tech (Mag7)** | Total compensation (base + RSUs + bonus) at Alphabet, Amazon, Apple, Meta, Microsoft, Nvidia, Tesla. Assumes major tech hub. RSUs dominate at senior+ levels. |
 
 **Disclaimer:** Salary figures are estimates based on market data and may vary significantly by geography, company size, industry, and individual negotiation. Use as directional guidance, not absolute benchmarks.
 
