@@ -6,16 +6,12 @@ title: Security Leadership Titles
 <div class="intro-section">
 
 <h1>Security Leadership Titles</h1>
-<br>
-This page provides standardized job titles, responsibilities, and expectations for security executives and senior leaders. These roles span all security functions—offensive, defensive, and specialized—providing strategic direction, risk management, and business alignment.
-<br>
-<b>How to use these tables:</b>
-<br>
-<ul>
-  <li>Levels are displayed as columns for easy comparison across the executive ladder</li>
-  <li>The attribute column stays fixed while you scroll horizontally</li>
-  <li>Scroll horizontally to compare across all levels</li>
-</ul>
+
+<p>
+Standardized job titles, responsibilities, and expectations for security executives and senior leaders. These roles span all security functions&mdash;offensive, defensive, and specialized&mdash;providing strategic direction, risk management, and business alignment.
+</p>
+
+<p><strong>How to use these tables:</strong> Levels are displayed as columns for easy comparison across the executive ladder. The attribute column stays fixed while you scroll horizontally.</p>
 
 <nav class="toc-nav" id="table-of-contents">
   <strong>Jump to:</strong>
@@ -158,6 +154,13 @@ This page provides standardized job titles, responsibilities, and expectations f
       <td class="attribute-name"><strong>Salary: US Corporate</strong></td>
       {% for level in role_data.levels %}
       <td class="salary-cell">{{ level.salary.us_corporate }}</td>
+      {% endfor %}
+    </tr>
+    
+    <tr class="salary-row">
+      <td class="attribute-name"><strong>Salary: Big Tech (Mag7)</strong></td>
+      {% for level in role_data.levels %}
+      <td class="salary-cell">{{ level.salary.us_bigtech }}</td>
       {% endfor %}
     </tr>
   </tbody>

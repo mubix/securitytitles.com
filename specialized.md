@@ -6,16 +6,12 @@ title: Specialized Security Professional Titles
 <div class="intro-section">
 
 <h1>Specialized Security Professional Titles</h1>
-<br>
-This page provides standardized job titles, responsibilities, and expectations for specialized and cross-functional security professionals. These roles often span traditional offensive/defensive boundaries or focus on specific security domains.
-<br>
-<b>How to use these tables:</b>
-<br>
-<ul>
-  <li>Levels are displayed as columns for easy vertical comparison</li>
-  <li>The attribute column stays fixed while you scroll horizontally</li>
-  <li>Scroll horizontally to compare across all levels</li>
-</ul>
+
+<p>
+Standardized job titles, responsibilities, and expectations for specialized and cross-functional security professionals. These roles often span traditional offensive/defensive boundaries or focus on specific security domains.
+</p>
+
+<p><strong>How to use these tables:</strong> Levels are displayed as columns for easy vertical comparison. The attribute column stays fixed while you scroll horizontally.</p>
 
 <nav class="toc-nav" id="table-of-contents">
   <strong>Jump to:</strong>
@@ -29,23 +25,15 @@ This page provides standardized job titles, responsibilities, and expectations f
     <li><a href="#forensic-analyst">Forensic Analyst</a></li>
     <li><a href="#cti-analyst">CTI Analyst</a></li>
     <li><a href="#cti-engineer">CTI Engineer</a></li>
-    <!-- Future sections -->
-    <!--
-    <li><a href="#grc">GRC</a></li>
-    <li><a href="#iam">Identity & Access Management</a></li>
-    <li><a href="#info-protection">Information Protection</a></li>
-    <li><a href="#ot-security">OT Security</a></li>
-    <li><a href="#physical-security">Physical Security</a></li>
-    -->
   </ul>
 </nav>
 
 </div>
 
 <!-- Enterprise Vulnerability Management Section -->
-<div class="domain-header" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; padding: 1.5rem 2rem; border-radius: 8px; margin: 2rem 0 1rem 0;">
-  <h2 style="margin: 0; color: white; border: none;">🔍 Enterprise Vulnerability Management (EVM)</h2>
-  <p style="margin: 0.5rem 0 0 0; opacity: 0.9;">Strategic vulnerability identification, risk-based prioritization, and remediation enablement</p>
+<div class="domain-header domain-header--evm">
+  <h2>Enterprise Vulnerability Management (EVM)</h2>
+  <p>Strategic vulnerability identification, risk-based prioritization, and remediation enablement</p>
 </div>
 
 {% for role in site.data.evm %}
@@ -182,20 +170,27 @@ This page provides standardized job titles, responsibilities, and expectations f
       <td class="salary-cell">{{ level.salary.us_corporate }}</td>
       {% endfor %}
     </tr>
+    
+    <tr class="salary-row">
+      <td class="attribute-name"><strong>Salary: Big Tech (Mag7)</strong></td>
+      {% for level in role_data.levels %}
+      <td class="salary-cell">{{ level.salary.us_bigtech }}</td>
+      {% endfor %}
+    </tr>
   </tbody>
 </table>
 </div>
 
-<a href="#table-of-contents" class="back-to-top">↑ Back to navigation</a>
+<a href="#table-of-contents" class="back-to-top">&#8593; Back to navigation</a>
 
 </div>
 
 {% endfor %}
 
 <!-- Application Security Section -->
-<div class="domain-header" style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); color: white; padding: 1.5rem 2rem; border-radius: 8px; margin: 2rem 0 1rem 0;">
-  <h2 style="margin: 0; color: white; border: none;">🔐 Application Security (AppSec / Product Security)</h2>
-  <p style="margin: 0.5rem 0 0 0; opacity: 0.9;">Secure software development, security testing, threat modeling, and developer enablement</p>
+<div class="domain-header domain-header--appsec">
+  <h2>Application Security (AppSec / Product Security)</h2>
+  <p>Secure software development, security testing, threat modeling, and developer enablement</p>
 </div>
 
 {% for role in site.data.appsec %}
@@ -332,20 +327,27 @@ This page provides standardized job titles, responsibilities, and expectations f
       <td class="salary-cell">{{ level.salary.us_corporate }}</td>
       {% endfor %}
     </tr>
+    
+    <tr class="salary-row">
+      <td class="attribute-name"><strong>Salary: Big Tech (Mag7)</strong></td>
+      {% for level in role_data.levels %}
+      <td class="salary-cell">{{ level.salary.us_bigtech }}</td>
+      {% endfor %}
+    </tr>
   </tbody>
 </table>
 </div>
 
-<a href="#table-of-contents" class="back-to-top">↑ Back to navigation</a>
+<a href="#table-of-contents" class="back-to-top">&#8593; Back to navigation</a>
 
 </div>
 
 {% endfor %}
 
 <!-- Cloud Security Section -->
-<div class="domain-header" style="background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%); color: white; padding: 1.5rem 2rem; border-radius: 8px; margin: 2rem 0 1rem 0;">
-  <h2 style="margin: 0; color: white; border: none;">☁️ Cloud Security (CloudSec)</h2>
-  <p style="margin: 0.5rem 0 0 0; opacity: 0.9;">Multi-cloud security architecture, IAM, DevSecOps, and enabling secure cloud adoption</p>
+<div class="domain-header domain-header--cloudsec">
+  <h2>Cloud Security (CloudSec)</h2>
+  <p>Multi-cloud security architecture, IAM, DevSecOps, and enabling secure cloud adoption</p>
 </div>
 
 {% for role in site.data.cloudsec %}
@@ -482,20 +484,27 @@ This page provides standardized job titles, responsibilities, and expectations f
       <td class="salary-cell">{{ level.salary.us_corporate }}</td>
       {% endfor %}
     </tr>
+    
+    <tr class="salary-row">
+      <td class="attribute-name"><strong>Salary: Big Tech (Mag7)</strong></td>
+      {% for level in role_data.levels %}
+      <td class="salary-cell">{{ level.salary.us_bigtech }}</td>
+      {% endfor %}
+    </tr>
   </tbody>
 </table>
 </div>
 
-<a href="#table-of-contents" class="back-to-top">↑ Back to navigation</a>
+<a href="#table-of-contents" class="back-to-top">&#8593; Back to navigation</a>
 
 </div>
 
 {% endfor %}
 
 <!-- Digital Forensics Section -->
-<div class="domain-header" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 1.5rem 2rem; border-radius: 8px; margin: 2rem 0 1rem 0;">
-  <h2 style="margin: 0; color: white; border: none;">🔬 Digital Forensics</h2>
-  <p style="margin: 0.5rem 0 0 0; opacity: 0.9;">Evidence acquisition, artifact analysis, incident response forensics, and legal proceedings support</p>
+<div class="domain-header domain-header--forensics">
+  <h2>Digital Forensics</h2>
+  <p>Evidence acquisition, artifact analysis, incident response forensics, and legal proceedings support</p>
 </div>
 
 {% for role in site.data.forensics %}
@@ -632,20 +641,27 @@ This page provides standardized job titles, responsibilities, and expectations f
       <td class="salary-cell">{{ level.salary.us_corporate }}</td>
       {% endfor %}
     </tr>
+    
+    <tr class="salary-row">
+      <td class="attribute-name"><strong>Salary: Big Tech (Mag7)</strong></td>
+      {% for level in role_data.levels %}
+      <td class="salary-cell">{{ level.salary.us_bigtech }}</td>
+      {% endfor %}
+    </tr>
   </tbody>
 </table>
 </div>
 
-<a href="#table-of-contents" class="back-to-top">↑ Back to navigation</a>
+<a href="#table-of-contents" class="back-to-top">&#8593; Back to navigation</a>
 
 </div>
 
 {% endfor %}
 
 <!-- Cyber Threat Intelligence Section -->
-<div class="domain-header" style="background: linear-gradient(135deg, #f39c12 0%, #d68910 100%); color: white; padding: 1.5rem 2rem; border-radius: 8px; margin: 2rem 0 1rem 0;">
-  <h2 style="margin: 0; color: white; border: none;">🎯 Cyber Threat Intelligence (CTI)</h2>
-  <p style="margin: 0.5rem 0 0 0; opacity: 0.9;">Threat actor tracking, organization-specific risk analysis, and intelligence-driven defense</p>
+<div class="domain-header domain-header--cti">
+  <h2>Cyber Threat Intelligence (CTI)</h2>
+  <p>Threat actor tracking, organization-specific risk analysis, and intelligence-driven defense</p>
 </div>
 
 {% for role in site.data.cti %}
@@ -782,11 +798,18 @@ This page provides standardized job titles, responsibilities, and expectations f
       <td class="salary-cell">{{ level.salary.us_corporate }}</td>
       {% endfor %}
     </tr>
+    
+    <tr class="salary-row">
+      <td class="attribute-name"><strong>Salary: Big Tech (Mag7)</strong></td>
+      {% for level in role_data.levels %}
+      <td class="salary-cell">{{ level.salary.us_bigtech }}</td>
+      {% endfor %}
+    </tr>
   </tbody>
 </table>
 </div>
 
-<a href="#table-of-contents" class="back-to-top">↑ Back to navigation</a>
+<a href="#table-of-contents" class="back-to-top">&#8593; Back to navigation</a>
 
 </div>
 

@@ -3,238 +3,191 @@ layout: fullwidth
 title: Home
 ---
 
-<div class="intro-section">
+<div class="hero">
 
-<h1>Standardizing Security Titles</h1>
+<h1>Standardizing<br>Security Titles</h1>
 
-<p style="font-size: 1.15rem; color: #555; margin-bottom: 1.5rem;">
+<p class="hero-subtitle">
 An open-source framework for consistent job titles, levels, and expectations across the cybersecurity industry.
 </p>
 
-<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; margin: 2rem 0;">
-  <h2 style="margin-top: 0; color: white; border: none;">Why This Matters</h2>
-  <p style="margin-bottom: 0; font-size: 1.05rem;">
-    A "Senior Security Engineer" at one company might equal a "Security Analyst II" at another. 
-    This inconsistency makes it hard to compare roles, set fair compensation, and define clear career paths. 
+<div class="hero-callout">
+  <h2>Why This Matters</h2>
+  <p>
+    A "Senior Security Engineer" at one company might equal a "Security Analyst II" at another.
+    This inconsistency makes it hard to compare roles, set fair compensation, and define clear career paths.
     <strong>Security Titles</strong> provides a common language for the industry.
   </p>
 </div>
 
 </div>
 
-<div class="table-section">
+<h3 class="section-heading">Browse Role Frameworks</h3>
 
-<h2 style="border-bottom: 3px solid #3498db;">📚 Browse Role Frameworks</h2>
+<div class="domain-grid">
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-
-  <a href="/offense" style="text-decoration: none;">
-    <div style="background: #fff; border: 2px solid #e74c3c; border-radius: 12px; padding: 1.5rem; transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-      <h3 style="color: #e74c3c; margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
-        <span style="font-size: 1.5rem;">⚔️</span> Offensive Security
-      </h3>
-      <p style="color: #666; margin-bottom: 0.75rem;">
-        Penetration testers, red team analysts & engineers, purple team specialists, and offensive security management.
-      </p>
-      <ul style="color: #888; font-size: 0.9rem; margin: 0; padding-left: 1.25rem;">
-        <li>Penetration Testing (7 levels)</li>
-        <li>Red Team Analyst (7 levels)</li>
-        <li>Red Team Engineer (7 levels)</li>
-        <li>Purple Team (7 levels)</li>
-        <li>Management Track (3 levels)</li>
-      </ul>
-    </div>
+  <a href="/offense" class="domain-card" data-domain="offense">
+    <h3 class="card-title">Offensive Security</h3>
+    <p class="card-desc">Penetration testers, red team analysts & engineers, purple team specialists, and offensive security management.</p>
+    <ul class="card-roles">
+      <li>Penetration Testing</li>
+      <li>Red Team Analyst</li>
+      <li>Red Team Engineer</li>
+      <li>Purple Team</li>
+      <li>Management</li>
+    </ul>
   </a>
 
-  <a href="/defense" style="text-decoration: none;">
-    <div style="background: #fff; border: 2px solid #3498db; border-radius: 12px; padding: 1.5rem; transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-      <h3 style="color: #3498db; margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
-        <span style="font-size: 1.5rem;">🛡️</span> Defensive Security
-      </h3>
-      <p style="color: #666; margin-bottom: 0.75rem;">
-        SOC analysts, security administrators, security engineers, architects, and defensive security management.
-      </p>
-      <ul style="color: #888; font-size: 0.9rem; margin: 0; padding-left: 1.25rem;">
-        <li>SOC Analyst (4 levels)</li>
-        <li>Security Administrator (4 levels)</li>
-        <li>Security Engineer (6 levels)</li>
-        <li>Security Architect (6 levels)</li>
-        <li>Management Track (3 levels)</li>
-      </ul>
-    </div>
+  <a href="/defense" class="domain-card" data-domain="defense">
+    <h3 class="card-title">Defensive Security</h3>
+    <p class="card-desc">SOC analysts, security administrators, security engineers, architects, and defensive security management.</p>
+    <ul class="card-roles">
+      <li>SOC Analyst</li>
+      <li>Security Admin</li>
+      <li>Security Engineer</li>
+      <li>Security Architect</li>
+      <li>Management</li>
+    </ul>
   </a>
 
-  <a href="/grc" style="text-decoration: none;">
-    <div style="background: #fff; border: 2px solid #27ae60; border-radius: 12px; padding: 1.5rem; transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-      <h3 style="color: #27ae60; margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
-        <span style="font-size: 1.5rem;">📋</span> GRC
-      </h3>
-      <p style="color: #666; margin-bottom: 0.75rem;">
-        Governance, Risk & Compliance professionals who enable the business through risk management, compliance, and policy.
-      </p>
-      <ul style="color: #888; font-size: 0.9rem; margin: 0; padding-left: 1.25rem;">
-        <li>Risk Analyst (7 levels)</li>
-        <li>Compliance Analyst (7 levels)</li>
-        <li>Governance Analyst (7 levels)</li>
-        <li>GRC Engineer (7 levels)</li>
-      </ul>
-    </div>
+  <a href="/grc" class="domain-card" data-domain="grc">
+    <h3 class="card-title">Governance, Risk & Compliance</h3>
+    <p class="card-desc">Professionals who enable the business through risk management, compliance, and policy governance.</p>
+    <ul class="card-roles">
+      <li>Risk Analyst</li>
+      <li>Compliance Analyst</li>
+      <li>Governance Analyst</li>
+      <li>GRC Engineer</li>
+    </ul>
   </a>
 
-  <a href="/iam" style="text-decoration: none;">
-    <div style="background: #fff; border: 2px solid #8e44ad; border-radius: 12px; padding: 1.5rem; transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-      <h3 style="color: #8e44ad; margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
-        <span style="font-size: 1.5rem;">🔑</span> IAM
-      </h3>
-      <p style="color: #666; margin-bottom: 0.75rem;">
-        Identity and Access Management professionals covering governance, authentication, privileged access, and identity security.
-      </p>
-      <ul style="color: #888; font-size: 0.9rem; margin: 0; padding-left: 1.25rem;">
-        <li>IGA, Access Mgmt, PAM, Directory Services</li>
-        <li>CIAM, IAM Architect</li>
-        <li>Identity Security Analyst & Engineer (ITDR)</li>
-      </ul>
-    </div>
+  <a href="/iam" class="domain-card" data-domain="iam">
+    <h3 class="card-title">Identity & Access Management</h3>
+    <p class="card-desc">Covering identity governance, authentication, privileged access, directory services, and identity security.</p>
+    <ul class="card-roles">
+      <li>IGA</li>
+      <li>Access Mgmt</li>
+      <li>PAM</li>
+      <li>Directory Services</li>
+      <li>CIAM</li>
+      <li>IAM Architect</li>
+      <li>Identity Security</li>
+    </ul>
   </a>
 
-  <a href="/specialized" style="text-decoration: none;">
-    <div style="background: #fff; border: 2px solid #9b59b6; border-radius: 12px; padding: 1.5rem; transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-      <h3 style="color: #9b59b6; margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
-        <span style="font-size: 1.5rem;">🔬</span> Specialized Roles
-      </h3>
-      <p style="color: #666; margin-bottom: 0.75rem;">
-        Cross-functional and domain-specific security roles including vulnerability management, application security, cloud security, forensics, and threat intelligence.
-      </p>
-      <ul style="color: #888; font-size: 0.9rem; margin: 0; padding-left: 1.25rem;">
-        <li>EVM, AppSec, CloudSec (Engineer & Architect tracks)</li>
-        <li>Forensic Analyst, CTI Analyst & Engineer</li>
-        <li><em>Coming: Info Protection, OT Security...</em></li>
-      </ul>
-    </div>
+  <a href="/specialized" class="domain-card" data-domain="specialized">
+    <h3 class="card-title">Specialized Roles</h3>
+    <p class="card-desc">Cross-functional and domain-specific security roles spanning vulnerability management, AppSec, cloud security, forensics, and threat intelligence.</p>
+    <ul class="card-roles">
+      <li>EVM</li>
+      <li>AppSec</li>
+      <li>CloudSec</li>
+      <li>Forensics</li>
+      <li>CTI</li>
+    </ul>
   </a>
 
-  <a href="/leadership" style="text-decoration: none;">
-    <div style="background: #fff; border: 2px solid #f39c12; border-radius: 12px; padding: 1.5rem; transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-      <h3 style="color: #f39c12; margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
-        <span style="font-size: 1.5rem;">👔</span> Leadership
-      </h3>
-      <p style="color: #666; margin-bottom: 0.75rem;">
-        Executive and senior leadership roles spanning all security functions, from Director to CISO.
-      </p>
-      <ul style="color: #888; font-size: 0.9rem; margin: 0; padding-left: 1.25rem;">
-        <li>Director</li>
-        <li>Senior Director</li>
-        <li>VP / SVP</li>
-        <li>CISO</li>
-      </ul>
-    </div>
+  <a href="/leadership" class="domain-card" data-domain="leadership">
+    <h3 class="card-title">Leadership</h3>
+    <p class="card-desc">Executive and senior leadership roles spanning all security functions, from Director to CISO.</p>
+    <ul class="card-roles">
+      <li>Director</li>
+      <li>Senior Director</li>
+      <li>VP / SVP</li>
+      <li>CISO</li>
+    </ul>
+  </a>
+
+  <a href="/consultant" class="domain-card" data-domain="consultant">
+    <h3 class="card-title">Security Consulting</h3>
+    <p class="card-desc">Big 4 consulting career ladder, vCISO services, and Fractional CISO practice for multi-client advisory work.</p>
+    <ul class="card-roles">
+      <li>Analyst</li>
+      <li>Manager</li>
+      <li>Director</li>
+      <li>Partner</li>
+      <li>vCISO</li>
+      <li>Fractional CISO</li>
+    </ul>
   </a>
 
 </div>
 
+<h3 class="section-heading">What Each Framework Covers</h3>
+
+<div class="feature-grid">
+  <div class="feature-chip">
+    <strong>Responsibilities</strong>
+    <span>Core duties and expectations at each level</span>
+  </div>
+  <div class="feature-chip">
+    <strong>Skills</strong>
+    <span>Required and preferred technical abilities</span>
+  </div>
+  <div class="feature-chip">
+    <strong>Education</strong>
+    <span>Degree equivalents and certifications</span>
+  </div>
+  <div class="feature-chip">
+    <strong>Compensation</strong>
+    <span>Salary ranges across sectors</span>
+  </div>
+  <div class="feature-chip">
+    <strong>Mentorship</strong>
+    <span>Guidance received and provided</span>
+  </div>
+  <div class="feature-chip">
+    <strong>Impact & Authority</strong>
+    <span>Decision-making scope and influence</span>
+  </div>
 </div>
 
-<div class="table-section">
+<h3 class="section-heading">Use Cases</h3>
 
-<h2 style="border-bottom: 3px solid #27ae60;">📊 What's Covered</h2>
-
-<p>Each role framework provides detailed information across multiple dimensions:</p>
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
-  
-  <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #3498db;">
-    <strong style="color: #2c3e50;">📋 Responsibilities</strong>
-    <p style="font-size: 0.9rem; color: #666; margin: 0.5rem 0 0 0;">Core duties and expectations at each level</p>
+<div class="use-case-grid">
+  <div class="use-case">
+    <h4>For Hiring Managers</h4>
+    <p>Write accurate job descriptions, set appropriate compensation, and benchmark candidates against industry standards.</p>
   </div>
-  
-  <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #e74c3c;">
-    <strong style="color: #2c3e50;">🛠️ Skills</strong>
-    <p style="font-size: 0.9rem; color: #666; margin: 0.5rem 0 0 0;">Required and preferred technical abilities</p>
+  <div class="use-case">
+    <h4>For Job Seekers</h4>
+    <p>Understand where you fit, identify skill gaps, negotiate compensation, and plan your career progression.</p>
   </div>
-  
-  <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #f39c12;">
-    <strong style="color: #2c3e50;">🎓 Education</strong>
-    <p style="font-size: 0.9rem; color: #666; margin: 0.5rem 0 0 0;">Degree equivalents and certifications</p>
+  <div class="use-case">
+    <h4>For Team Leads</h4>
+    <p>Define career ladders, set promotion criteria, and create development plans for your team members.</p>
   </div>
-  
-  <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #27ae60;">
-    <strong style="color: #2c3e50;">💰 Compensation</strong>
-    <p style="font-size: 0.9rem; color: #666; margin: 0.5rem 0 0 0;">Salary ranges across sectors</p>
+  <div class="use-case">
+    <h4>For Organizations</h4>
+    <p>Standardize titles across departments, align compensation with market rates, and build consistent job families.</p>
   </div>
-  
-  <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #9b59b6;">
-    <strong style="color: #2c3e50;">👥 Mentorship</strong>
-    <p style="font-size: 0.9rem; color: #666; margin: 0.5rem 0 0 0;">Guidance received and provided</p>
-  </div>
-  
-  <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #1abc9c;">
-    <strong style="color: #2c3e50;">🎯 Impact & Authority</strong>
-    <p style="font-size: 0.9rem; color: #666; margin: 0.5rem 0 0 0;">Decision-making scope and influence</p>
-  </div>
-
-</div>
-
-</div>
-
-<div class="table-section">
-
-<h2 style="border-bottom: 3px solid #f39c12;">🎯 Use Cases</h2>
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
-
-  <div>
-    <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">👔 For Hiring Managers</h4>
-    <p style="color: #666; font-size: 0.95rem;">Write accurate job descriptions, set appropriate compensation, and benchmark candidates against industry standards.</p>
-  </div>
-
-  <div>
-    <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">🚀 For Job Seekers</h4>
-    <p style="color: #666; font-size: 0.95rem;">Understand where you fit, identify skill gaps, negotiate compensation, and plan your career progression.</p>
-  </div>
-
-  <div>
-    <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">📈 For Team Leads</h4>
-    <p style="color: #666; font-size: 0.95rem;">Define career ladders, set promotion criteria, and create development plans for your team members.</p>
-  </div>
-
-  <div>
-    <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">🏢 For Organizations</h4>
-    <p style="color: #666; font-size: 0.95rem;">Standardize titles across departments, align compensation with market rates, and build consistent job families.</p>
-  </div>
-
-</div>
-
 </div>
 
 <div class="footer-section">
 
-<h2>🤝 Get Involved</h2>
+<h2>Get Involved</h2>
 
 <p>This is a community-driven project. Your experience and insights make it better.</p>
 
-<div style="display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.5rem 0;">
-  <a href="https://github.com/mubix/securitytitles.com/discussions" style="display: inline-flex; align-items: center; gap: 0.5rem; background: #2c3e50; color: white; padding: 0.75rem 1.25rem; border-radius: 8px; text-decoration: none; font-weight: 500;">
-    💬 Join the Discussion
-  </a>
-  <a href="https://github.com/mubix/securitytitles.com" style="display: inline-flex; align-items: center; gap: 0.5rem; background: #f8f9fa; color: #2c3e50; padding: 0.75rem 1.25rem; border-radius: 8px; text-decoration: none; font-weight: 500; border: 1px solid #ddd;">
-    📦 View on GitHub
-  </a>
+<div class="cta-row">
+  <a href="https://github.com/mubix/securitytitles.com/discussions" class="cta-btn cta-btn--primary">Join the Discussion</a>
+  <a href="https://github.com/mubix/securitytitles.com" class="cta-btn cta-btn--secondary">View on GitHub</a>
 </div>
 
 <h3>Ways to Contribute</h3>
 
 <ul>
-  <li><strong>Share feedback</strong> — Does something not match your experience? Let us know.</li>
-  <li><strong>Improve accuracy</strong> — Help refine responsibilities, skills, and salary data.</li>
-  <li><strong>Add roles</strong> — Help us expand to cover more specialized areas.</li>
-  <li><strong>Spread the word</strong> — Reference these standards in your job postings and career discussions.</li>
+  <li><strong>Share feedback</strong> &mdash; Does something not match your experience? Let us know.</li>
+  <li><strong>Improve accuracy</strong> &mdash; Help refine responsibilities, skills, and salary data.</li>
+  <li><strong>Add roles</strong> &mdash; Help us expand to cover more specialized areas.</li>
+  <li><strong>Spread the word</strong> &mdash; Reference these standards in your job postings and career discussions.</li>
 </ul>
 
-<hr style="margin: 2rem 0; border: none; border-top: 1px solid #ecf0f1;">
+<hr>
 
-<p style="color: #888; font-size: 0.9rem;">
+<p style="color: var(--text-muted); font-size: 0.85rem;">
   <strong>Security Titles</strong> is maintained by Rob Fuller (mubix) and Chris Gates (carnal0wnage) and the security community.<br>
-  Licensed under the <a href="https://github.com/mubix/securitytitles.com/blob/main/LICENSE" style="color: #3498db;">BSD 3-Clause License</a>.
+  Licensed under the <a href="https://github.com/mubix/securitytitles.com/blob/main/LICENSE">BSD 3-Clause License</a>.
 </p>
 
 </div>

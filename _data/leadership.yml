@@ -53,6 +53,7 @@ security_leadership:
         us_government: "$175,000 - $220,000 (GS-15 Step 10 / SES)"
         us_startup: "$220,000 - $300,000 + significant equity"
         us_corporate: "$200,000 - $280,000 + bonus"
+        us_bigtech: "$550,000 - $900,000"
 
     - id: "sr_dir"
       title: "Senior Director"
@@ -100,6 +101,7 @@ security_leadership:
         us_government: "$195,000 - $250,000 (SES equivalent)"
         us_startup: "$270,000 - $360,000 + significant equity"
         us_corporate: "$250,000 - $340,000 + bonus"
+        us_bigtech: "$700,000 - $1,200,000"
 
     - id: "vp"
       title: "Vice President"
@@ -148,6 +150,7 @@ security_leadership:
         us_government: "$220,000 - $280,000 (Senior SES)"
         us_startup: "$320,000 - $420,000 + major equity"
         us_corporate: "$300,000 - $400,000 + bonus"
+        us_bigtech: "$900,000 - $1,500,000"
 
     - id: "svp"
       title: "Senior Vice President"
@@ -196,6 +199,7 @@ security_leadership:
         us_government: "$260,000 - $320,000+ (Senior SES / Political appointee)"
         us_startup: "$380,000 - $500,000+ + significant equity"
         us_corporate: "$375,000 - $500,000+ + bonus + LTI"
+        us_bigtech: "$1,100,000 - $2,000,000"
 
     - id: "ciso"
       title: "CISO / Chief Information Security Officer"
@@ -248,3 +252,4 @@ security_leadership:
         us_government: "$280,000 - $400,000+ (Senior SES / Agency head equivalent)"
         us_startup: "$400,000 - $600,000+ + major equity + signing"
         us_corporate: "$450,000 - $750,000+ + bonus + LTI"
+        us_bigtech: "$1,500,000 - $3,000,000+"

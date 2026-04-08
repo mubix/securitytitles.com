@@ -6,16 +6,12 @@ title: Offensive Security Professional Titles
 <div class="intro-section">
 
 <h1>Offensive Security Professional Titles</h1>
-<br>
-This page provides standardized job titles, responsibilities, and expectations for offensive security professionals. Use these frameworks to understand career progression, set role expectations, and benchmark compensation.
-<br>
-<b>How to use these tables:</b>
-<br>
-<ul>
-  <li>Levels are displayed as columns for easy vertical comparison</li>
-  <li>The attribute column stays fixed while you scroll horizontally</li>
-  <li>Scroll horizontally to compare across all levels</li>
-</ul>
+
+<p>
+Standardized job titles, responsibilities, and expectations for offensive security professionals. Use these frameworks to understand career progression, set role expectations, and benchmark compensation.
+</p>
+
+<p><strong>How to use these tables:</strong> Levels are displayed as columns for easy vertical comparison. The attribute column stays fixed while you scroll horizontally.</p>
 
 <nav class="toc-nav" id="table-of-contents">
   <strong>Jump to:</strong>
@@ -162,6 +158,13 @@ This page provides standardized job titles, responsibilities, and expectations f
       <td class="attribute-name"><strong>Salary: US Corporate</strong></td>
       {% for level in role_data.levels %}
       <td class="salary-cell">{{ level.salary.us_corporate }}</td>
+      {% endfor %}
+    </tr>
+    
+    <tr class="salary-row">
+      <td class="attribute-name"><strong>Salary: Big Tech (Mag7)</strong></td>
+      {% for level in role_data.levels %}
+      <td class="salary-cell">{{ level.salary.us_bigtech }}</td>
       {% endfor %}
     </tr>
   </tbody>

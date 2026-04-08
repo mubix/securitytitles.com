@@ -44,6 +44,7 @@ soc_analyst:
         us_government: "$50,000 - $70,000 (GS-7 to GS-9)"
         us_startup: "$55,000 - $75,000"
         us_corporate: "$50,000 - $70,000"
+        us_bigtech: "$110,000 - $170,000"
 
     - id: "analyst2"
       title: "Analyst 2 / Junior"
@@ -86,6 +87,7 @@ soc_analyst:
         us_government: "$65,000 - $85,000 (GS-9 to GS-11)"
         us_startup: "$70,000 - $95,000"
         us_corporate: "$65,000 - $90,000"
+        us_bigtech: "$150,000 - $240,000"
 
     - id: "analyst3"
       title: "Analyst 3 / Mid"
@@ -130,6 +132,7 @@ soc_analyst:
         us_government: "$85,000 - $115,000 (GS-12 to GS-13)"
         us_startup: "$95,000 - $130,000"
         us_corporate: "$90,000 - $120,000"
+        us_bigtech: "$220,000 - $350,000"
 
     - id: "analyst4"
       title: "Analyst 4 / Senior / Lead"
@@ -175,6 +178,7 @@ soc_analyst:
         us_government: "$110,000 - $145,000 (GS-14 to GS-15)"
         us_startup: "$130,000 - $170,000 + equity"
         us_corporate: "$120,000 - $160,000"
+        us_bigtech: "$300,000 - $480,000"
 
 security_administrator:
   name: "Security Administrator"
@@ -220,6 +224,7 @@ security_administrator:
         us_government: "$50,000 - $70,000 (GS-7 to GS-9)"
         us_startup: "$55,000 - $80,000"
         us_corporate: "$50,000 - $75,000"
+        us_bigtech: "$110,000 - $170,000"
 
     - id: "admin2"
       title: "Admin 2 / Junior"
@@ -263,6 +268,7 @@ security_administrator:
         us_government: "$65,000 - $90,000 (GS-9 to GS-11)"
         us_startup: "$75,000 - $100,000"
         us_corporate: "$70,000 - $95,000"
+        us_bigtech: "$150,000 - $240,000"
 
     - id: "admin3"
       title: "Admin 3 / Mid"
@@ -307,6 +313,7 @@ security_administrator:
         us_government: "$90,000 - $120,000 (GS-12 to GS-13)"
         us_startup: "$100,000 - $140,000"
         us_corporate: "$95,000 - $130,000"
+        us_bigtech: "$220,000 - $350,000"
 
     - id: "admin4"
       title: "Admin 4 / Senior / Lead"
@@ -352,6 +359,7 @@ security_administrator:
         us_government: "$115,000 - $150,000 (GS-14 to GS-15)"
         us_startup: "$140,000 - $180,000 + equity"
         us_corporate: "$130,000 - $170,000"
+        us_bigtech: "$300,000 - $480,000"
 
 security_engineer:
   name: "Security Engineer"
@@ -397,6 +405,7 @@ security_engineer:
         us_government: "$65,000 - $85,000 (GS-9 to GS-11)"
         us_startup: "$75,000 - $100,000"
         us_corporate: "$70,000 - $95,000"
+        us_bigtech: "$120,000 - $190,000"
 
     - id: "engineer2"
       title: "Engineer 2 / Junior"
@@ -440,6 +449,7 @@ security_engineer:
         us_government: "$80,000 - $110,000 (GS-11 to GS-12)"
         us_startup: "$95,000 - $130,000"
         us_corporate: "$90,000 - $120,000"
+        us_bigtech: "$170,000 - $280,000"
 
     - id: "engineer3"
       title: "Engineer 3 / Mid"
@@ -484,6 +494,7 @@ security_engineer:
         us_government: "$100,000 - $135,000 (GS-12 to GS-13)"
         us_startup: "$130,000 - $170,000"
         us_corporate: "$120,000 - $155,000"
+        us_bigtech: "$250,000 - $400,000"
 
     - id: "engineer4"
       title: "Engineer 4 / Senior / Lead"
@@ -528,6 +539,7 @@ security_engineer:
         us_government: "$125,000 - $160,000 (GS-14 to GS-15)"
         us_startup: "$160,000 - $210,000 + equity"
         us_corporate: "$150,000 - $195,000"
+        us_bigtech: "$350,000 - $550,000"
 
     - id: "engineer5"
       title: "Engineer 5 / Staff"
@@ -571,6 +583,7 @@ security_engineer:
         us_government: "$150,000 - $190,000 (GS-15 / SES equivalent)"
         us_startup: "$200,000 - $270,000 + significant equity"
         us_corporate: "$185,000 - $240,000"
+        us_bigtech: "$500,000 - $800,000"
 
     - id: "engineer6"
       title: "Engineer 6 / Principal"
@@ -610,6 +623,7 @@ security_engineer:
         us_government: "$180,000 - $230,000+ (Senior SES equivalent)"
         us_startup: "$260,000 - $380,000+ + major equity"
         us_corporate: "$240,000 - $320,000+"
+        us_bigtech: "$700,000 - $1,200,000"
 
 security_architect:
   name: "Security Architect"
@@ -655,6 +669,7 @@ security_architect:
         us_government: "$75,000 - $95,000 (GS-11 to GS-12)"
         us_startup: "$85,000 - $115,000"
         us_corporate: "$80,000 - $110,000"
+        us_bigtech: "$120,000 - $190,000"
 
     - id: "architect2"
       title: "Architect 2 / Junior"
@@ -698,6 +713,7 @@ security_architect:
         us_government: "$90,000 - $120,000 (GS-12 to GS-13)"
         us_startup: "$110,000 - $145,000"
         us_corporate: "$100,000 - $135,000"
+        us_bigtech: "$170,000 - $280,000"
 
     - id: "architect3"
       title: "Architect 3 / Mid"
@@ -743,6 +759,7 @@ security_architect:
         us_government: "$115,000 - $150,000 (GS-13 to GS-14)"
         us_startup: "$145,000 - $185,000"
         us_corporate: "$135,000 - $175,000"
+        us_bigtech: "$250,000 - $400,000"
 
     - id: "architect4"
       title: "Architect 4 / Senior"
@@ -787,6 +804,7 @@ security_architect:
         us_government: "$140,000 - $175,000 (GS-14 to GS-15)"
         us_startup: "$175,000 - $230,000 + equity"
         us_corporate: "$165,000 - $215,000"
+        us_bigtech: "$350,000 - $550,000"
 
     - id: "architect5"
       title: "Architect 5 / Staff"
@@ -828,6 +846,7 @@ security_architect:
         us_government: "$165,000 - $210,000 (GS-15 / SES equivalent)"
         us_startup: "$215,000 - $290,000 + significant equity"
         us_corporate: "$200,000 - $265,000"
+        us_bigtech: "$500,000 - $800,000"
 
     - id: "architect6"
       title: "Architect 6 / Principal"
@@ -866,6 +885,7 @@ security_architect:
         us_government: "$190,000 - $250,000+ (Senior SES equivalent)"
         us_startup: "$270,000 - $400,000+ + major equity"
         us_corporate: "$250,000 - $350,000+"
+        us_bigtech: "$700,000 - $1,200,000"
 
 managers:
   name: "Defensive Security Management"
@@ -913,6 +933,7 @@ managers:
         us_government: "$120,000 - $155,000 (GS-14 to GS-15)"
         us_startup: "$145,000 - $190,000 + equity"
         us_corporate: "$135,000 - $180,000"
+        us_bigtech: "$350,000 - $550,000"
 
     - id: "mgr2"
       title: "Management 2 / Senior Manager"
@@ -957,6 +978,7 @@ managers:
         us_government: "$150,000 - $190,000 (GS-15 / SES equivalent)"
         us_startup: "$180,000 - $250,000 + significant equity"
         us_corporate: "$170,000 - $235,000"
+        us_bigtech: "$450,000 - $700,000"
 
     - id: "mgr3"
       title: "Management 3 / Director"
@@ -1005,3 +1027,4 @@ managers:
         us_government: "$170,000 - $210,000 (GS-15 Step 10 / SES equivalent)"
         us_startup: "$210,000 - $290,000 + significant equity"
         us_corporate: "$195,000 - $270,000 + bonus"
+        us_bigtech: "$550,000 - $900,000"

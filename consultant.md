@@ -1,14 +1,14 @@
 ---
 layout: fullwidth
-title: Defensive Security Professional Titles
+title: Security Consulting Professional Titles
 ---
 
 <div class="intro-section">
 
-<h1>Defensive Security Professional Titles</h1>
+<h1>Security Consulting Professional Titles</h1>
 
 <p>
-Standardized job titles, responsibilities, and expectations for defensive security professionals. Use these frameworks to understand career progression, set role expectations, and benchmark compensation.
+Standardized job titles, responsibilities, and expectations for security consulting professionals. This covers the Big 4 consulting career ladder (Deloitte, EY, KPMG, PwC), mid-tier and boutique consultancies, MSSPs, and the growing vCISO and Fractional CISO market.
 </p>
 
 <p><strong>How to use these tables:</strong> Levels are displayed as columns for easy vertical comparison. The attribute column stays fixed while you scroll horizontally.</p>
@@ -16,17 +16,15 @@ Standardized job titles, responsibilities, and expectations for defensive securi
 <nav class="toc-nav" id="table-of-contents">
   <strong>Jump to:</strong>
   <ul>
-    <li><a href="#soc-analyst">SOC Analyst</a></li>
-    <li><a href="#security-administrator">Security Administrator</a></li>
-    <li><a href="#security-engineer">Security Engineer</a></li>
-    <li><a href="#security-architect">Security Architect</a></li>
-    <li><a href="#defensive-security-management">Management</a></li>
+    <li><a href="#security-consultant">Security Consultant (Big 4 Ladder)</a></li>
+    <li><a href="#virtual-ciso-vciso">Virtual CISO (vCISO)</a></li>
+    <li><a href="#fractional-ciso">Fractional CISO</a></li>
   </ul>
 </nav>
 
 </div>
 
-{% for role in site.data.defense %}
+{% for role in site.data.consultant %}
 {% assign role_data = role[1] %}
 
 <div class="table-section">
@@ -171,7 +169,7 @@ Standardized job titles, responsibilities, and expectations for defensive securi
 </table>
 </div>
 
-<a href="#table-of-contents" class="back-to-top">↑ Back to navigation</a>
+<a href="#table-of-contents" class="back-to-top">&#8593; Back to navigation</a>
 
 </div>
 
@@ -181,22 +179,34 @@ Standardized job titles, responsibilities, and expectations for defensive securi
 
 ## About This Framework
 
-This standardization framework is designed to:
+### Consulting Career Context
 
-1. **Provide clarity** on role expectations at each level
-2. **Enable fair compensation** through transparent salary benchmarking
-3. **Support career development** by clearly defining progression paths
-4. **Facilitate hiring** with consistent job descriptions and requirements
+| Track | Focus | Typical Employers |
+|-------|-------|-------------------|
+| **Security Consultant** | Multi-client advisory, assessments, program development | Big 4 (Deloitte, EY, KPMG, PwC), Accenture, Optiv, Coalfire, boutique firms |
+| **Virtual CISO (vCISO)** | Part-time CISO services through a firm, 5-15 clients | MSSPs, vCISO firms (CISO Global, Omega Systems), consultancies |
+| **Fractional CISO** | Independent part-time CISO, 2-5 clients, deeper engagement | Independent practice, small boutiques |
+
+### vCISO vs. Fractional CISO
+
+| Dimension | vCISO | Fractional CISO |
+|-----------|-------|-----------------|
+| **Employment** | Employed by a firm or MSSP | Independent or small boutique |
+| **Client assignment** | Assigned by the firm; may serve 5-15+ clients | Self-selected; typically 2-5 clients |
+| **Engagement depth** | Often advisory and compliance-focused | Deeper integration; C-suite participation |
+| **Revenue model** | Salary + bonus; firm bills for your time | Direct retainer; keeps full revenue |
+| **Typical background** | 10-15+ years; firm provides methodology | 15-25+ years; former full-time CISO |
 
 ### Salary Notes
 
 | Sector | Notes |
 |--------|-------|
-| **US Government** | Based on General Schedule (GS) and Senior Executive Service (SES) pay scales. Actual compensation varies by locality pay area. |
-| **US Startup** | Reflects venture-backed companies. Equity compensation can significantly increase total compensation. |
-| **US Corporate** | Reflects Fortune 500 and large enterprise compensation. May include bonus structures of 10-30%+. |
+| **US Government** | Based on General Schedule (GS) and SES pay scales. Government consulting pay is typically lower than private sector. |
+| **US Startup** | Reflects venture-backed companies and smaller consultancies. May include equity at partner level. |
+| **US Corporate** | Reflects Big 4 and large consultancy compensation. Partner compensation includes profit-sharing. |
+| **Big Tech (Mag7)** | Total compensation at Alphabet, Amazon, Apple, Meta, Microsoft, Nvidia, Tesla. Security consulting roles are rare at Big Tech; these ranges reflect internal security advisory equivalents. |
 
-All salary figures are estimates based on market data and may vary significantly by geography, company size, industry, and individual negotiation.
+All salary figures are estimates based on market data and may vary significantly by geography, firm size, and individual negotiation. Big 4 Partner compensation is highly variable based on practice performance and profit-sharing.
 
 ### Contributing
 

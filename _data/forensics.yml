@@ -46,6 +46,7 @@ forensic_analyst:
         us_government: "$55,000 - $75,000 (GS-7 to GS-9)"
         us_startup: "$65,000 - $90,000"
         us_corporate: "$60,000 - $85,000"
+        us_bigtech: "$110,000 - $170,000"
 
     - id: "analyst2"
       title: "Analyst 2 / Junior"
@@ -90,6 +91,7 @@ forensic_analyst:
         us_government: "$70,000 - $95,000 (GS-9 to GS-11)"
         us_startup: "$85,000 - $115,000"
         us_corporate: "$80,000 - $110,000"
+        us_bigtech: "$155,000 - $250,000"
 
     - id: "analyst3"
       title: "Analyst 3 / Mid"
@@ -135,6 +137,7 @@ forensic_analyst:
         us_government: "$90,000 - $120,000 (GS-11 to GS-13)"
         us_startup: "$110,000 - $150,000"
         us_corporate: "$105,000 - $140,000"
+        us_bigtech: "$225,000 - $360,000"
 
     - id: "analyst4"
       title: "Analyst 4 / Senior / Lead"
@@ -182,6 +185,7 @@ forensic_analyst:
         us_government: "$115,000 - $150,000 (GS-13 to GS-14)"
         us_startup: "$145,000 - $195,000 + equity"
         us_corporate: "$135,000 - $180,000"
+        us_bigtech: "$315,000 - $495,000"
 
     - id: "analyst5"
       title: "Analyst 5 / Staff"
@@ -224,6 +228,7 @@ forensic_analyst:
         us_government: "$140,000 - $175,000 (GS-15 / SES equivalent)"
         us_startup: "$180,000 - $245,000 + significant equity"
         us_corporate: "$170,000 - $230,000"
+        us_bigtech: "$450,000 - $720,000"
 
     - id: "analyst6"
       title: "Analyst 6 / Senior Staff"
@@ -262,6 +267,7 @@ forensic_analyst:
         us_government: "$165,000 - $210,000 (Senior SES equivalent)"
         us_startup: "$220,000 - $300,000 + major equity"
         us_corporate: "$205,000 - $275,000"
+        us_bigtech: "$630,000 - $1,080,000"
 
     - id: "analyst7"
       title: "Analyst 7 / Principal"
@@ -299,3 +305,4 @@ forensic_analyst:
         us_government: "$185,000 - $240,000+ (Senior SES / Technical fellow equivalent)"
         us_startup: "$270,000 - $380,000+ + founder-level equity"
         us_corporate: "$250,000 - $340,000+"
+        us_bigtech: "$900,000 - $2,250,000+"
