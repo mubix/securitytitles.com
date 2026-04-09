@@ -4,6 +4,12 @@
 soc_analyst:
   name: "SOC Analyst"
   description: "Security Operations Center professionals who monitor, detect, and respond to security threats and incidents. Serve as the front line of defense, triaging alerts, investigating suspicious activity, and coordinating incident response efforts."
+  nice_mapping:
+    work_roles:
+      - id: "PR-CDA-001"
+        name: "Cyber Defense Analyst"
+    strength: "direct"
+    notes: ""
   levels:
     - id: "analyst1"
       title: "Analyst 1 / Entry"
@@ -183,6 +189,12 @@ soc_analyst:
 security_administrator:
   name: "Security Administrator"
   description: "Professionals who implement, configure, and maintain security controls and infrastructure. Responsible for the day-to-day operation of security tools, policy enforcement, and ensuring security systems function effectively to protect organizational assets."
+  nice_mapping:
+    work_roles:
+      - id: "PR-INF-001"
+        name: "Cyber Defense Infrastructure Support Specialist"
+    strength: "strong"
+    notes: "NICE is more infrastructure-specific; Security Titles covers broader security control administration."
   levels:
     - id: "admin1"
       title: "Admin 1 / Entry"
@@ -364,6 +376,14 @@ security_administrator:
 security_engineer:
   name: "Security Engineer"
   description: "Technical professionals who design, build, and implement security solutions and controls. Focus on developing security capabilities through engineering, automation, and integration. Bridge the gap between security requirements and technical implementation."
+  nice_mapping:
+    work_roles:
+      - id: "PR-INF-001"
+        name: "Cyber Defense Infrastructure Support Specialist"
+      - id: "PR-CDA-001"
+        name: "Cyber Defense Analyst"
+    strength: "strong"
+    notes: "Security Titles merges build and maintain functions; NICE splits infrastructure support from analysis."
   levels:
     - id: "engineer1"
       title: "Engineer 1 / Entry"
@@ -628,6 +648,12 @@ security_engineer:
 security_architect:
   name: "Security Architect"
   description: "Strategic technical leaders who design security frameworks, architectures, and strategies for organizations. Focus on translating business requirements into security designs, evaluating technologies, and ensuring security is integrated into enterprise architecture."
+  nice_mapping:
+    work_roles:
+      - id: "SP-ARC-002"
+        name: "Security Architect"
+    strength: "direct"
+    notes: ""
   levels:
     - id: "architect1"
       title: "Architect 1 / Entry"
@@ -890,6 +916,12 @@ security_architect:
 managers:
   name: "Defensive Security Management"
   description: "Leaders who manage defensive security teams, programs, and business units. Responsible for strategy, people development, stakeholder relationships, and business outcomes. Progress from team management to organizational and executive leadership."
+  nice_mapping:
+    work_roles:
+      - id: "OV-MGT-001"
+        name: "Information Systems Security Manager"
+    strength: "partial"
+    notes: "NICE uses a generic security manager role with no defense-specific management track."
   levels:
     - id: "mgr1"
       title: "Management 1 / Manager"

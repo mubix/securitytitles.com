@@ -4,6 +4,12 @@
 evm_analyst:
   name: "EVM Analyst"
   description: "Professionals who identify, assess, and drive remediation of security vulnerabilities across the enterprise. Focus on risk-based prioritization, threat intelligence integration, and enabling systemic remediation rather than transactional ticket management. Partner with asset owners to address root causes and improve organizational security posture."
+  nice_mapping:
+    work_roles:
+      - id: "PR-VAM-001"
+        name: "Vulnerability Assessment Analyst"
+    strength: "strong"
+    notes: "Good overlap on vulnerability identification and prioritization."
   levels:
     - id: "analyst1"
       title: "Analyst 1 / Entry"
@@ -300,6 +306,12 @@ evm_analyst:
 evm_engineer:
   name: "EVM Engineer"
   description: "Technical professionals who build, deploy, and maintain enterprise vulnerability management platforms and infrastructure. Focus on scanner deployment, platform integration, automation development, and enabling analyst effectiveness through tooling and dashboards. Serve as architects for scanning infrastructure and the technical bridge to vendors."
+  nice_mapping:
+    work_roles:
+      - id: "PR-VAM-001"
+        name: "Vulnerability Assessment Analyst"
+    strength: "partial"
+    notes: "Security Titles adds platform engineering and automation scope beyond NICE's assessment focus."
   levels:
     - id: "eng1"
       title: "Eng 1 / Entry"

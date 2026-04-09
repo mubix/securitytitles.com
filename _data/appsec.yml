@@ -5,6 +5,12 @@
 appsec_engineer:
   name: "AppSec Engineer"
   description: "Technical professionals who secure applications throughout the software development lifecycle. Focus on code review, security testing, DevSecOps integration, and developer enablement. Combine defensive expertise (secure coding guidance, SAST/DAST tooling) with offensive skills (manual testing, proof-of-concept development) to identify and help remediate application vulnerabilities. Prioritize enablement over gatekeeping, helping developers build secure code rather than just finding problems."
+  nice_mapping:
+    work_roles:
+      - id: "SP-DEV-002"
+        name: "Secure Software Assessor"
+    strength: "strong"
+    notes: "NICE focuses on assessment; Security Titles also includes SDLC integration and developer enablement."
   levels:
     - id: "eng1"
       title: "Eng 1 / Entry"
@@ -301,6 +307,14 @@ appsec_engineer:
 appsec_architect:
   name: "AppSec Architect"
   description: "Strategic technical leaders who design secure application architectures, develop security standards, and build frameworks for secure software development. Focus on threat modeling, secure design patterns, SSDLC program development, and enterprise-wide application security strategy. Enable development organizations to build security into applications from design through deployment."
+  nice_mapping:
+    work_roles:
+      - id: "SP-DEV-001"
+        name: "Software Developer"
+      - id: "SP-ARC-002"
+        name: "Security Architect"
+    strength: "partial"
+    notes: "NICE has no dedicated AppSec architecture role. Closest is a combination of secure development and general security architecture."
   levels:
     - id: "arch1"
       title: "Architect 1 / Entry"

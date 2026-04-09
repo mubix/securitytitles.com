@@ -4,6 +4,12 @@
 iga_analyst:
   name: "IGA Analyst"
   description: "Professionals who manage identity lifecycle and governance processes including joiner-mover-leaver workflows, provisioning/de-provisioning, role management (RBAC/ABAC), access certification and attestation, Separation of Duties (SoD) policy enforcement, and identity data quality. Focus on ensuring the right people have the right access at the right time while maintaining compliance and reducing identity-related risk."
+  nice_mapping:
+    work_roles:
+      - id: "SP-ARC-002"
+        name: "Security Architect"
+    strength: "tenuous"
+    notes: "No NICE equivalent for identity governance. NICE treats identity as infrastructure plumbing, not a distinct discipline."
   levels:
     - id: "analyst1"
       title: "Analyst 1 / Entry"
@@ -282,6 +288,12 @@ iga_analyst:
 access_management_engineer:
   name: "Access Management Engineer"
   description: "Technical professionals who implement and maintain authentication and access management infrastructure. Focus on authentication mechanisms (MFA, passwordless), single sign-on (SSO), federation protocols (SAML, OIDC, OAuth), adaptive/risk-based access, session management, and policy enforcement. Build the systems that verify identity and enforce access decisions."
+  nice_mapping:
+    work_roles:
+      - id: "PR-INF-001"
+        name: "Cyber Defense Infrastructure Support Specialist"
+    strength: "tenuous"
+    notes: "NICE has no access management role. PR-INF-001 covers general security infrastructure, which partially overlaps."
   levels:
     - id: "eng1"
       title: "Eng 1 / Entry"
@@ -552,6 +564,12 @@ access_management_engineer:
 pam_engineer:
   name: "PAM Engineer"
   description: "Technical professionals who implement and manage privileged access management infrastructure. Focus on privileged account control, credential vaulting, session recording and monitoring, just-in-time (JIT) access, least privilege enforcement, and privileged access workstation (PAW) controls. Protect the most sensitive access in the enterprise by securing administrative and service accounts."
+  nice_mapping:
+    work_roles:
+      - id: "PR-INF-001"
+        name: "Cyber Defense Infrastructure Support Specialist"
+    strength: "tenuous"
+    notes: "NICE does not decompose IAM subdisciplines. PAM is absent from the framework entirely."
   levels:
     - id: "eng1"
       title: "Eng 1 / Entry"
@@ -821,6 +839,12 @@ pam_engineer:
 directory_services_engineer:
   name: "Directory Services Engineer"
   description: "Technical professionals who design, implement, and maintain enterprise directory services and identity stores. Focus on Active Directory, LDAP directories, identity synchronization, meta-directories, and authoritative data models. Build and maintain the foundational identity infrastructure that other IAM systems rely upon for identity data."
+  nice_mapping:
+    work_roles:
+      - id: "OM-ADM-001"
+        name: "System Administrator"
+    strength: "tenuous"
+    notes: "NICE treats directory services as general sysadmin work. No identity infrastructure role exists."
   levels:
     - id: "eng1"
       title: "Eng 1 / Entry"
@@ -1080,6 +1104,10 @@ directory_services_engineer:
 ciam_engineer:
   name: "CIAM Engineer"
   description: "Technical professionals who implement and manage customer-facing identity and access management systems. Focus on customer authentication, social login integration, consent and privacy management, user experience optimization, progressive profiling, and fraud risk integration. Build identity experiences that balance security, privacy, and frictionless customer engagement."
+  nice_mapping:
+    work_roles: []
+    strength: "tenuous"
+    notes: "No NICE equivalent. Customer-facing IAM is absent from the framework entirely."
   levels:
     - id: "eng1"
       title: "Eng 1 / Entry"
@@ -1335,6 +1363,12 @@ ciam_engineer:
 iam_architect:
   name: "IAM Architect"
   description: "Strategic technical leaders who design enterprise IAM architectures spanning all identity domains. Focus on cross-domain integration, enterprise identity strategy, zero trust architecture, cloud and hybrid identity, and aligning IAM capabilities with business objectives. Bridge IGA, PAM, Access Management, Directory Services, and CIAM into cohesive enterprise identity architectures."
+  nice_mapping:
+    work_roles:
+      - id: "SP-ARC-002"
+        name: "Security Architect"
+    strength: "partial"
+    notes: "SP-ARC-002 is a general security architecture role. IAM-specific architecture is not addressed in NICE."
   levels:
     - id: "arch1"
       title: "Architect 1 / Entry"
@@ -1610,6 +1644,12 @@ iam_architect:
 identity_security_analyst:
   name: "Identity Security Analyst"
   description: "Security professionals who detect, investigate, and respond to identity-based threats. Focus on Identity Threat Detection and Response (ITDR), identity analytics, behavior anomaly detection, credential attack detection, privilege escalation monitoring, and identity incident investigation. Protect identity infrastructure from sophisticated attacks targeting authentication, authorization, and identity systems."
+  nice_mapping:
+    work_roles:
+      - id: "PR-CDA-001"
+        name: "Cyber Defense Analyst"
+    strength: "tenuous"
+    notes: "Identity threat detection is a newer discipline NICE has not captured. PR-CDA-001 covers general threat detection but not identity-specific focus."
   levels:
     - id: "analyst1"
       title: "Analyst 1 / Entry"
@@ -1871,6 +1911,12 @@ identity_security_analyst:
 identity_security_engineer:
   name: "Identity Security Engineer"
   description: "Technical professionals who build and maintain identity threat detection and response infrastructure. Focus on ITDR platform deployment, identity detection engineering, identity security automation, identity log collection and analysis, and integration of identity security tools. Build the technical capabilities that enable identity threat detection and response."
+  nice_mapping:
+    work_roles:
+      - id: "PR-INF-001"
+        name: "Cyber Defense Infrastructure Support Specialist"
+    strength: "tenuous"
+    notes: "Identity security engineering is a newer discipline not represented in NICE. PR-INF-001 covers general security infrastructure support."
   levels:
     - id: "eng1"
       title: "Eng 1 / Entry"

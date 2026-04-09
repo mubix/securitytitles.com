@@ -1,6 +1,14 @@
 penetration_tester:
   name: "Penetration Tester"
   description: "Professionals who assess security by simulating attacks against systems, networks, and applications to identify vulnerabilities before malicious actors can exploit them."
+  nice_mapping:
+    work_roles:
+      - id: "AN-EXP-001"
+        name: "Exploitation Analyst"
+      - id: "PR-VAM-001"
+        name: "Vulnerability Assessment Analyst"
+    strength: "direct"
+    notes: "NICE splits vulnerability assessment from exploitation; Security Titles combines both under one penetration testing track."
   levels:
     - id: "eng1"
       title: "Eng 1 / Entry"
@@ -301,6 +309,12 @@ penetration_tester:
 red_team_analyst:
   name: "Red Team - Analyst"
   description: "Professionals who simulate advanced persistent threats (APTs) to test organizational detection and response capabilities. Analysts focus on threat intelligence, campaign planning, social engineering, and adversary emulation strategy."
+  nice_mapping:
+    work_roles:
+      - id: "AN-EXP-001"
+        name: "Exploitation Analyst"
+    strength: "strong"
+    notes: "NICE lacks explicit red team roles. AN-EXP-001 covers adversary emulation but not the campaign planning and social engineering focus."
   levels:
     - id: "analyst1"
       title: "Analyst 1 / Entry"
@@ -588,6 +602,14 @@ red_team_analyst:
 red_team_engineer:
   name: "Red Team - Engineer"
   description: "Technical practitioners who build and operate red team infrastructure, develop custom tools and implants, and execute sophisticated attack chains. Engineers focus on the technical execution of adversary emulation campaigns."
+  nice_mapping:
+    work_roles:
+      - id: "AN-EXP-001"
+        name: "Exploitation Analyst"
+      - id: "AN-TGT-002"
+        name: "Target Developer"
+    strength: "partial"
+    notes: "NICE has no tooling/infrastructure-focused red team role. AN-TGT-002 covers target analysis; AN-EXP-001 covers exploitation, but neither captures C2 infrastructure and implant development."
   levels:
     - id: "eng1"
       title: "Eng 1 / Entry"
@@ -877,6 +899,14 @@ red_team_engineer:
 purple_team:
   name: "Purple Team"
   description: "Professionals who bridge offensive and defensive security by facilitating collaboration between red and blue teams. Focus on improving detection capabilities, validating security controls, and enabling continuous security improvement through adversary simulation."
+  nice_mapping:
+    work_roles:
+      - id: "PR-CDA-001"
+        name: "Cyber Defense Analyst"
+      - id: "AN-EXP-001"
+        name: "Exploitation Analyst"
+    strength: "tenuous"
+    notes: "No NICE equivalent exists. Purple Team spans both offensive (AN-EXP-001) and defensive (PR-CDA-001) domains, a concept the NICE framework does not address."
   levels:
     - id: "specialist1"
       title: "Specialist 1 / Entry"
@@ -1156,6 +1186,12 @@ purple_team:
 managers:
   name: "Offensive Security Management"
   description: "Leaders who manage offensive security teams, programs, and business units. Responsible for strategy, people development, client relationships, and business outcomes. Progress from team management to organizational and business leadership."
+  nice_mapping:
+    work_roles:
+      - id: "OV-MGT-001"
+        name: "Information Systems Security Manager"
+    strength: "partial"
+    notes: "NICE uses a generic security manager role. No distinction between offensive and defensive management tracks."
   levels:
     - id: "mgr1"
       title: "Mgr 1 / Manager"

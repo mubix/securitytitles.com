@@ -4,6 +4,14 @@
 cti_analyst:
   name: "CTI Analyst"
   description: "Intelligence professionals who produce actionable threat intelligence tailored to their organization's specific risk landscape. Focus on threat actor tracking, campaign analysis, and intelligence products (strategic, operational, tactical) that inform security decisions. Go beyond republishing external reports by correlating internal data sources to identify organization-specific threats—understanding who the real targets are based on access, exposure, and observed targeting patterns, not just titles. Intelligence serves decisions; if it doesn't inform action, it's just information."
+  nice_mapping:
+    work_roles:
+      - id: "AN-TWA-001"
+        name: "Threat/Warning Analyst"
+      - id: "AN-ASA-002"
+        name: "All-Source Analyst"
+    strength: "direct"
+    notes: ""
   levels:
     - id: "analyst1"
       title: "Analyst 1 / Entry"
@@ -307,6 +315,12 @@ cti_analyst:
 cti_engineer:
   name: "CTI Engineer"
   description: "Technical professionals who build and maintain the infrastructure that enables threat intelligence operations. Focus on TIP deployment, feed integration, enrichment automation, MITRE ATT&CK operationalization, and detection content development. Bridge the gap between raw intelligence and defensive action by building systems that correlate internal telemetry with external threats. Skills overlap significantly with Detection Engineering; some organizations combine these functions."
+  nice_mapping:
+    work_roles:
+      - id: "AN-TWA-001"
+        name: "Threat/Warning Analyst"
+    strength: "partial"
+    notes: "NICE lacks a CTI platform/engineering role. AN-TWA-001 covers analysis but not the TIP infrastructure and automation focus."
   levels:
     - id: "eng1"
       title: "Eng 1 / Entry"

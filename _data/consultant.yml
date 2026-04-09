@@ -5,6 +5,10 @@
 security_consultant:
   name: "Security Consultant"
   description: "Security consulting professionals who deliver advisory, assessment, and implementation services across multiple clients and industries. This track follows the Big 4 consulting career ladder (Deloitte, EY, KPMG, PwC) and applies broadly to mid-tier consulting firms, MSSPs, and boutique security consultancies. Consultants are generalists by design — engagements may span offensive testing, GRC, architecture review, incident response, and program development depending on client needs."
+  nice_mapping:
+    work_roles: []
+    strength: "tenuous"
+    notes: "NICE maps KSAs to work roles, not delivery models. No consulting or advisory role exists in the framework."
   levels:
     - id: "analyst"
       title: "Analyst / Associate"
@@ -320,6 +324,12 @@ security_consultant:
 virtual_ciso:
   name: "Virtual CISO (vCISO)"
   description: "A Virtual CISO is a security executive employed by a consulting firm, MSSP, or vCISO services company who provides part-time CISO-level advisory and program leadership to multiple client organizations simultaneously. vCISOs are typically assigned to 5-15 clients and deliver security strategy, risk management, compliance guidance, and program oversight through the firm's methodology and support structure. This is not an entry-level or mid-career role — firms typically require 10-15+ years of security experience including prior management or director-level responsibility. The vCISO title is a service delivery role, not a career level. Career progression happens within the consulting firm's ladder (Senior Consultant through Director), with vCISO being the engagement type assigned at the appropriate seniority."
+  nice_mapping:
+    work_roles:
+      - id: "OV-EXL-001"
+        name: "Executive Cyber Leadership"
+    strength: "partial"
+    notes: "NICE assumes full-time embedded roles. Virtual/fractional delivery models are absent from the framework."
   levels:
     - id: "vciso"
       title: "vCISO"
@@ -374,6 +384,12 @@ virtual_ciso:
 fractional_ciso:
   name: "Fractional CISO"
   description: "A Fractional CISO is an independent security executive who works part-time for 2-5 organizations simultaneously, providing strategic security leadership as a contracted executive rather than a full-time employee. Unlike a vCISO employed by a firm, a Fractional CISO operates independently (or through a small boutique), contracts directly with clients, and typically provides deeper engagement with fewer organizations. This model mirrors the Fractional CFO and Fractional COO patterns common in the SMB market. Most Fractional CISOs are former full-time CISOs or senior security directors with 15-25+ years of experience who prefer portfolio-based work over a single employer. Like the vCISO, this is not a leveled career track — it is a practice model. Career progression is measured by client portfolio quality, industry reputation, and practice growth rather than title advancement."
+  nice_mapping:
+    work_roles:
+      - id: "OV-EXL-001"
+        name: "Executive Cyber Leadership"
+    strength: "partial"
+    notes: "NICE assumes full-time embedded roles. Fractional delivery models are absent from the framework."
   levels:
     - id: "fractional_ciso"
       title: "Fractional CISO"

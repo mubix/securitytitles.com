@@ -4,6 +4,12 @@
 cloudsec_engineer:
   name: "Cloud Security Engineer"
   description: "Technical professionals who implement, configure, and maintain security controls in cloud environments. Focus on IAM, network security, CSPM/CWPP tooling, container and Kubernetes security, and infrastructure as code security. Combine deep platform expertise with automation skills to secure cloud workloads at scale. Prioritize enablement over blocking, helping organizations adopt cloud securely rather than slowing them down."
+  nice_mapping:
+    work_roles:
+      - id: "PR-INF-001"
+        name: "Cyber Defense Infrastructure Support Specialist"
+    strength: "tenuous"
+    notes: "NICE predates cloud-native security as a standalone discipline. PR-INF-001 is the closest general infrastructure role."
   levels:
     - id: "eng1"
       title: "Eng 1 / Entry"
@@ -300,6 +306,12 @@ cloudsec_engineer:
 cloudsec_architect:
   name: "Cloud Security Architect"
   description: "Strategic technical leaders who design cloud security architectures, develop security frameworks, and build strategies for securing cloud infrastructure at enterprise scale. Focus on landing zone design, multi-cloud strategy, zero trust architecture, and enabling secure cloud adoption. Partner with enterprise architecture and cloud platform teams to embed security into cloud foundations."
+  nice_mapping:
+    work_roles:
+      - id: "SP-ARC-002"
+        name: "Security Architect"
+    strength: "partial"
+    notes: "NICE's general architecture role has no cloud specificity. Cloud security architecture is not addressed."
   levels:
     - id: "arch1"
       title: "Architect 1 / Entry"

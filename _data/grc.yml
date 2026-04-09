@@ -4,6 +4,12 @@
 risk_analyst:
   name: "Risk Analyst"
   description: "Professionals who identify, assess, and quantify security risks to enable informed business decisions. Focus on risk assessments, risk register management, third-party risk management, risk quantification, and translating technical risks into business impact. Enable the business by providing clear risk information that supports decision-making rather than creating bureaucratic obstacles. Work closely with security engineering (who implements controls) and internal audit (who validates independently)."
+  nice_mapping:
+    work_roles:
+      - id: "OV-MGT-001"
+        name: "Information Systems Security Manager"
+    strength: "direct"
+    notes: "NICE risk management tasks map well to the risk assessment and risk register work in this role."
   levels:
     - id: "analyst1"
       title: "Analyst 1 / Entry"
@@ -300,6 +306,12 @@ risk_analyst:
 compliance_analyst:
   name: "Compliance Analyst"
   description: "Professionals who ensure organizational adherence to security frameworks, regulations, and standards. Focus on framework implementation, audit coordination, evidence management, control monitoring, and continuous compliance. Bridge technical security controls and audit/regulatory requirements. Enable the business by finding ways to achieve compliance efficiently rather than creating bureaucratic burden. Work hand-in-hand with internal audit who provides independent validation."
+  nice_mapping:
+    work_roles:
+      - id: "OV-LGA-002"
+        name: "Security Control Assessor"
+    strength: "partial"
+    notes: "NICE frames compliance through government RMF authorization, not commercial regulatory compliance. The control assessment overlap is real but the context differs."
   levels:
     - id: "analyst1"
       title: "Analyst 1 / Entry"
@@ -589,6 +601,14 @@ compliance_analyst:
 governance_analyst:
   name: "Governance Analyst"
   description: "Professionals who develop and maintain security governance structures including policies, standards, procedures, and governance committees. Focus on security policy development, standards management, governance framework implementation, and ensuring security is integrated into organizational decision-making. Enable the business by creating clear, practical governance that guides rather than constrains."
+  nice_mapping:
+    work_roles:
+      - id: "OV-SPP-001"
+        name: "Cyber Workforce Developer and Manager"
+      - id: "OV-SPP-002"
+        name: "Cyber Policy and Strategy Planner"
+    strength: "partial"
+    notes: "NICE is strategy-heavy with a government/military lens. Security Titles governance is more operationally focused on commercial policy and standards."
   levels:
     - id: "analyst1"
       title: "Analyst 1 / Entry"
@@ -870,6 +890,12 @@ governance_analyst:
 grc_engineer:
   name: "GRC Engineer"
   description: "Technical professionals who build and maintain GRC infrastructure including platforms, automation, and integrations. Focus on GRC tool administration (ServiceNow GRC, OneTrust, Archer, etc.), evidence collection automation, control validation automation, compliance monitoring dashboards, and integration with security tools. Enable GRC analysts to focus on judgment-intensive work by automating repetitive tasks."
+  nice_mapping:
+    work_roles:
+      - id: "OV-LGA-002"
+        name: "Security Control Assessor"
+    strength: "strong"
+    notes: "Security Titles emphasizes tooling and automation; NICE is assessment-focused. The control validation overlap is strong."
   levels:
     - id: "eng1"
       title: "Eng 1 / Entry"

@@ -5,6 +5,14 @@
 security_leadership:
   name: "Security Leadership"
   description: "Executive and senior leadership roles responsible for organizational security strategy, risk management, and program oversight. These roles span offensive, defensive, and specialized security functions, providing strategic direction and business alignment for security initiatives."
+  nice_mapping:
+    work_roles:
+      - id: "OV-EXL-001"
+        name: "Executive Cyber Leadership"
+      - id: "OV-MGT-001"
+        name: "Information Systems Security Manager"
+    strength: "strong"
+    notes: "NICE collapses the Director/VP/SVP ladder into a single executive role. OV-EXL-001 covers CISO-equivalent; OV-MGT-001 covers Director-level."
   levels:
     - id: "dir"
       title: "Director"

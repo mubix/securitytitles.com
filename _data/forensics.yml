@@ -4,6 +4,12 @@
 forensic_analyst:
   name: "Forensic Analyst"
   description: "Technical professionals who conduct digital forensic examinations to support incident response, insider threat investigations, HR matters, and legal proceedings. Focus on evidence acquisition, artifact analysis, timeline reconstruction, and producing court-ready documentation. Maintain strict chain of custody and apply scientific methodology to ensure defensible, reproducible findings. Corporate forensics teams are typically small, requiring practitioners to be versatile across disk, memory, mobile, and cloud forensics as they advance."
+  nice_mapping:
+    work_roles:
+      - id: "IN-FOR-002"
+        name: "Cyber Defense Forensics Analyst"
+    strength: "direct"
+    notes: ""
   levels:
     - id: "analyst1"
       title: "Analyst 1 / Entry"

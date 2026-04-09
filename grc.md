@@ -34,6 +34,22 @@ Standardized job titles, responsibilities, and expectations for GRC professional
 
 <p>{{ role_data.description }}</p>
 
+{% if role_data.nice_mapping %}
+<div class="nice-mapping">
+  <span class="nice-label">NICE Framework:</span>
+  {% for wr in role_data.nice_mapping.work_roles %}
+  <span class="nice-role">{{ wr.id }} {{ wr.name }}</span>
+  {% endfor %}
+  {% if role_data.nice_mapping.work_roles.size == 0 %}
+  <span class="nice-role">No direct mapping</span>
+  {% endif %}
+  <span class="nice-strength nice-strength--{{ role_data.nice_mapping.strength }}">{{ role_data.nice_mapping.strength }}</span>
+  {% if role_data.nice_mapping.notes != "" %}
+  <span class="nice-note">{{ role_data.nice_mapping.notes }}</span>
+  {% endif %}
+</div>
+{% endif %}
+
 <div class="table-responsive">
 <table class="role-table">
   <thead>
