@@ -409,13 +409,24 @@
       font-weight: 300;
     }
 
+    .hero-callout-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
     .hero-callout {
       background: var(--bg-secondary);
       border: 1px solid var(--border-primary);
       border-left: 3px solid var(--accent-defense);
       border-radius: 8px;
       padding: 1.5rem 1.75rem;
-      margin: 2rem 0;
+      margin: 0;
+    }
+
+    .hero-callout--nice {
+      border-left-color: var(--accent-grc);
     }
 
     .hero-callout h2 {
@@ -429,11 +440,28 @@
       border: none;
     }
 
+    .hero-callout--nice h2 {
+      color: var(--accent-grc);
+    }
+
     .hero-callout p {
       color: var(--text-secondary);
       font-size: 0.95rem;
       margin: 0;
       line-height: 1.7;
+    }
+
+    .hero-callout .nice-inline-badge {
+      display: inline-block;
+      padding: 0.15rem 0.45rem;
+      border-radius: 3px;
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      font-weight: 500;
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-primary);
+      color: var(--text-secondary);
+      vertical-align: baseline;
     }
 
     /* ===== DOMAIN CARDS ===== */
@@ -710,6 +738,16 @@
     .domain-header--forensics h2 { color: var(--accent-offense); }
     .domain-header--cti { border-left: 3px solid var(--accent-leadership); }
     .domain-header--cti h2 { color: var(--accent-leadership); }
+    .domain-header--fraud { border-left: 3px solid var(--accent-offense); }
+    .domain-header--fraud h2 { color: var(--accent-offense); }
+    .domain-header--otsec { border-left: 3px solid var(--accent-leadership); }
+    .domain-header--otsec h2 { color: var(--accent-leadership); }
+    .domain-header--physec { border-left: 3px solid var(--accent-grc); }
+    .domain-header--physec h2 { color: var(--accent-grc); }
+    .domain-header--insider-threat { border-left: 3px solid var(--accent-iam); }
+    .domain-header--insider-threat h2 { color: var(--accent-iam); }
+    .domain-header--privacy { border-left: 3px solid var(--accent-specialized); }
+    .domain-header--privacy h2 { color: var(--accent-specialized); }
 
     /* ===== TABLE SECTIONS ===== */
     .table-section {
@@ -1109,6 +1147,7 @@
       .nav-separator { display: none; }
       .site-content { padding: 1.5rem 1rem; }
       .hero h1 { font-size: 1.6rem; }
+      .hero-callout-grid { grid-template-columns: 1fr; }
       .domain-grid { grid-template-columns: 1fr; gap: 0.75rem; }
       .role-table { font-size: 0.78rem; }
       .role-table th, .role-table td { padding: 8px 8px; }

@@ -20,6 +20,8 @@ Standardized job titles, responsibilities, and expectations for GRC professional
     <li><a href="#compliance-analyst">Compliance Analyst</a></li>
     <li><a href="#governance-analyst">Governance Analyst</a></li>
     <li><a href="#grc-engineer">GRC Engineer</a></li>
+    <li><a href="#privacy-analyst">Privacy Analyst</a></li>
+    <li><a href="#privacy-engineer">Privacy Engineer</a></li>
   </ul>
 </nav>
 
@@ -187,6 +189,179 @@ Standardized job titles, responsibilities, and expectations for GRC professional
 </div>
 
 <a href="#table-of-contents" class="back-to-top">↑ Back to navigation</a>
+
+</div>
+
+{% endfor %}
+
+<!-- Privacy Section -->
+<div class="domain-header domain-header--privacy">
+  <h2>Privacy</h2>
+  <p>Data protection compliance, privacy engineering, consent management, and privacy-by-design implementation</p>
+</div>
+
+{% for role in site.data.privacy %}
+{% assign role_data = role[1] %}
+
+<div class="table-section">
+
+<h2 id="{{ role_data.name | slugify }}">{{ role_data.name }}</h2>
+
+<p>{{ role_data.description }}</p>
+
+{% if role_data.nice_mapping %}
+<div class="nice-mapping">
+  <span class="nice-label">NICE Framework:</span>
+  {% for wr in role_data.nice_mapping.work_roles %}
+  <span class="nice-role">{{ wr.id }} {{ wr.name }}</span>
+  {% endfor %}
+  {% if role_data.nice_mapping.work_roles.size == 0 %}
+  <span class="nice-role">No direct mapping</span>
+  {% endif %}
+  <span class="nice-strength nice-strength--{{ role_data.nice_mapping.strength }}">{{ role_data.nice_mapping.strength }}</span>
+  {% if role_data.nice_mapping.notes != "" %}
+  <span class="nice-note">{{ role_data.nice_mapping.notes }}</span>
+  {% endif %}
+</div>
+{% endif %}
+
+<div class="table-responsive">
+<table class="role-table">
+  <thead>
+    <tr>
+      <th class="attribute-header">Attribute</th>
+      {% for level in role_data.levels %}
+      <th class="level-header">{{ level.title }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="attribute-name"><strong>General Description</strong></td>
+      {% for level in role_data.levels %}
+      <td>{{ level.general_description }}</td>
+      {% endfor %}
+    </tr>
+    
+    <tr>
+      <td class="attribute-name"><strong>Primary Responsibilities</strong></td>
+      {% for level in role_data.levels %}
+      <td>
+        <ul class="compact-list">
+          {% for resp in level.primary_responsibilities %}
+          <li>{{ resp }}</li>
+          {% endfor %}
+        </ul>
+      </td>
+      {% endfor %}
+    </tr>
+    
+    <tr>
+      <td class="attribute-name"><strong>Required Skills</strong></td>
+      {% for level in role_data.levels %}
+      <td>
+        <ul class="compact-list">
+          {% for skill in level.required_skills %}
+          <li>{{ skill }}</li>
+          {% endfor %}
+        </ul>
+      </td>
+      {% endfor %}
+    </tr>
+    
+    <tr>
+      <td class="attribute-name"><strong>Preferred Skills</strong></td>
+      {% for level in role_data.levels %}
+      <td>
+        <ul class="compact-list">
+          {% for skill in level.preferred_skills %}
+          <li>{{ skill }}</li>
+          {% endfor %}
+        </ul>
+      </td>
+      {% endfor %}
+    </tr>
+    
+    <tr>
+      <td class="attribute-name"><strong>Mentorship Requirements</strong></td>
+      {% for level in role_data.levels %}
+      <td>{{ level.mentorship_requirements }}</td>
+      {% endfor %}
+    </tr>
+    
+    <tr>
+      <td class="attribute-name"><strong>Impact Scope</strong></td>
+      {% for level in role_data.levels %}
+      <td>{{ level.impact_scope }}</td>
+      {% endfor %}
+    </tr>
+    
+    <tr>
+      <td class="attribute-name"><strong>Autonomy &amp; Decision Authority</strong></td>
+      {% for level in role_data.levels %}
+      <td>{{ level.autonomy_decision_authority }}</td>
+      {% endfor %}
+    </tr>
+    
+    <tr>
+      <td class="attribute-name"><strong>Communication &amp; Stakeholders</strong></td>
+      {% for level in role_data.levels %}
+      <td>{{ level.communication_stakeholder }}</td>
+      {% endfor %}
+    </tr>
+    
+    <tr>
+      <td class="attribute-name"><strong>Degree / Experience</strong></td>
+      {% for level in role_data.levels %}
+      <td>{{ level.degree_equivalent }}</td>
+      {% endfor %}
+    </tr>
+    
+    <tr>
+      <td class="attribute-name"><strong>Certifications</strong></td>
+      {% for level in role_data.levels %}
+      <td>
+        <ul class="compact-list">
+          {% for cert in level.certifications %}
+          <li>{{ cert }}</li>
+          {% endfor %}
+        </ul>
+      </td>
+      {% endfor %}
+    </tr>
+    
+    <tr class="salary-row">
+      <td class="attribute-name"><strong>Salary: US Gov't</strong></td>
+      {% for level in role_data.levels %}
+      <td class="salary-cell">{{ level.salary.us_government }}</td>
+      {% endfor %}
+    </tr>
+    
+    <tr class="salary-row">
+      <td class="attribute-name"><strong>Salary: US Startup</strong></td>
+      {% for level in role_data.levels %}
+      <td class="salary-cell">{{ level.salary.us_startup }}</td>
+      {% endfor %}
+    </tr>
+    
+    <tr class="salary-row">
+      <td class="attribute-name"><strong>Salary: US Corporate</strong></td>
+      {% for level in role_data.levels %}
+      <td class="salary-cell">{{ level.salary.us_corporate }}</td>
+      {% endfor %}
+    </tr>
+    
+    <tr class="salary-row">
+      <td class="attribute-name"><strong>Salary: Big Tech (Mag7)</strong></td>
+      {% for level in role_data.levels %}
+      <td class="salary-cell">{{ level.salary.us_bigtech }}</td>
+      {% endfor %}
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<a href="#table-of-contents" class="back-to-top">&#8593; Back to navigation</a>
 
 </div>
 

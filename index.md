@@ -11,13 +11,24 @@ title: Home
 An open-source framework for consistent job titles, levels, and expectations across the cybersecurity industry.
 </p>
 
-<div class="hero-callout">
-  <h2>Why This Matters</h2>
-  <p>
-    A "Senior Security Engineer" at one company might equal a "Security Analyst II" at another.
-    This inconsistency makes it hard to compare roles, set fair compensation, and define clear career paths.
-    <strong>Security Titles</strong> provides a common language for the industry.
-  </p>
+<div class="hero-callout-grid">
+  <div class="hero-callout">
+    <h2>Why This Matters</h2>
+    <p>
+      A "Senior Security Engineer" at one company might equal a "Security Analyst II" at another.
+      This inconsistency makes it hard to compare roles, set fair compensation, and define clear career paths.
+      <strong>Security Titles</strong> provides a common language for the industry.
+    </p>
+  </div>
+  <div class="hero-callout hero-callout--nice">
+    <h2>NICE Framework Aligned</h2>
+    <p>
+      Every role includes a best-effort mapping to the <strong>NIST NICE Workforce Framework</strong>
+      <span class="nice-inline-badge">SP 800-181r1</span> &mdash; the federal standard for
+      cybersecurity work roles. Each mapping shows the closest NICE Work Role, the strength
+      of the match, and where the frameworks diverge.
+    </p>
+  </div>
 </div>
 
 </div>
@@ -40,24 +51,27 @@ An open-source framework for consistent job titles, levels, and expectations acr
 
   <a href="/defense" class="domain-card" data-domain="defense">
     <h3 class="card-title">Defensive Security</h3>
-    <p class="card-desc">SOC analysts, security administrators, security engineers, architects, and defensive security management.</p>
+    <p class="card-desc">SOC analysts, incident responders, insider threat, security administrators, engineers, architects, and management.</p>
     <ul class="card-roles">
       <li>SOC Analyst</li>
+      <li>Incident Responder</li>
       <li>Security Admin</li>
       <li>Security Engineer</li>
       <li>Security Architect</li>
+      <li>Insider Threat</li>
       <li>Management</li>
     </ul>
   </a>
 
   <a href="/grc" class="domain-card" data-domain="grc">
     <h3 class="card-title">Governance, Risk & Compliance</h3>
-    <p class="card-desc">Professionals who enable the business through risk management, compliance, and policy governance.</p>
+    <p class="card-desc">Professionals who enable the business through risk management, compliance, policy governance, and privacy.</p>
     <ul class="card-roles">
       <li>Risk Analyst</li>
       <li>Compliance Analyst</li>
       <li>Governance Analyst</li>
       <li>GRC Engineer</li>
+      <li>Privacy</li>
     </ul>
   </a>
 
@@ -77,13 +91,16 @@ An open-source framework for consistent job titles, levels, and expectations acr
 
   <a href="/specialized" class="domain-card" data-domain="specialized">
     <h3 class="card-title">Specialized Roles</h3>
-    <p class="card-desc">Cross-functional and domain-specific security roles spanning vulnerability management, AppSec, cloud security, forensics, and threat intelligence.</p>
+    <p class="card-desc">Cross-functional and domain-specific security roles spanning vulnerability management, AppSec, cloud security, forensics, threat intelligence, fraud, OT security, and physical security.</p>
     <ul class="card-roles">
       <li>EVM</li>
       <li>AppSec</li>
       <li>CloudSec</li>
       <li>Forensics</li>
       <li>CTI</li>
+      <li>Cyber Fraud</li>
+      <li>OT Security</li>
+      <li>Physical Security</li>
     </ul>
   </a>
 
@@ -139,6 +156,10 @@ An open-source framework for consistent job titles, levels, and expectations acr
   <div class="feature-chip">
     <strong>Impact & Authority</strong>
     <span>Decision-making scope and influence</span>
+  </div>
+  <div class="feature-chip">
+    <strong>NICE Mapping</strong>
+    <span>NIST workforce framework alignment per role</span>
   </div>
 </div>
 

@@ -51,9 +51,9 @@ Every role and level at a glance, color-coded by compensation band. Click any ce
     </tr>
   </thead>
   <tbody>
-    {% assign domains = "offense,defense,grc,iam,evm,appsec,cloudsec,forensics,cti,leadership,consultant" | split: "," %}
-    {% assign domain_labels = "Offensive Security,Defensive Security,GRC,IAM,EVM,AppSec,Cloud Security,Forensics,CTI,Leadership,Consulting" | split: "," %}
-    {% assign domain_pages = "/offense,/defense,/grc,/iam,/specialized,/specialized,/specialized,/specialized,/specialized,/leadership,/consultant" | split: "," %}
+    {% assign domains = "offense,defense,insider_threat,grc,privacy,iam,evm,appsec,cloudsec,forensics,cti,fraud,otsec,physec,leadership,consultant" | split: "," %}
+    {% assign domain_labels = "Offensive Security,Defensive Security,Insider Threat,GRC,Privacy,IAM,EVM,AppSec,Cloud Security,Forensics,CTI,Cyber Fraud,OT Security,Physical Security,Leadership,Consulting" | split: "," %}
+    {% assign domain_pages = "/offense,/defense,/defense,/grc,/grc,/iam,/specialized,/specialized,/specialized,/specialized,/specialized,/specialized,/specialized,/specialized,/leadership,/consultant" | split: "," %}
 
     {% for d in domains %}
       {% assign idx = forloop.index0 %}

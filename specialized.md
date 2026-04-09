@@ -25,6 +25,12 @@ Standardized job titles, responsibilities, and expectations for specialized and 
     <li><a href="#forensic-analyst">Forensic Analyst</a></li>
     <li><a href="#cti-analyst">CTI Analyst</a></li>
     <li><a href="#cti-engineer">CTI Engineer</a></li>
+    <li><a href="#fraud-analyst">Fraud Analyst</a></li>
+    <li><a href="#fraud-engineer">Fraud Engineer</a></li>
+    <li><a href="#ot-security-engineer">OT Security Engineer</a></li>
+    <li><a href="#ot-security-architect">OT Security Architect</a></li>
+    <li><a href="#physical-security-engineer">Physical Security Engineer</a></li>
+    <li><a href="#physical-security-architect">Physical Security Architect</a></li>
   </ul>
 </nav>
 
@@ -895,6 +901,204 @@ Standardized job titles, responsibilities, and expectations for specialized and 
 
 {% endfor %}
 
+<!-- Cyber Fraud Section -->
+<div class="domain-header domain-header--fraud">
+  <h2>Cyber Fraud</h2>
+  <p>Fraud detection, investigation, prevention, and fraud platform engineering across financial crime and account security</p>
+</div>
+
+{% for role in site.data.fraud %}
+{% assign role_data = role[1] %}
+
+<div class="table-section">
+
+<h2 id="{{ role_data.name | slugify }}">{{ role_data.name }}</h2>
+
+<p>{{ role_data.description }}</p>
+
+{% if role_data.nice_mapping %}
+<div class="nice-mapping">
+  <span class="nice-label">NICE Framework:</span>
+  {% for wr in role_data.nice_mapping.work_roles %}
+  <span class="nice-role">{{ wr.id }} {{ wr.name }}</span>
+  {% endfor %}
+  {% if role_data.nice_mapping.work_roles.size == 0 %}
+  <span class="nice-role">No direct mapping</span>
+  {% endif %}
+  <span class="nice-strength nice-strength--{{ role_data.nice_mapping.strength }}">{{ role_data.nice_mapping.strength }}</span>
+  {% if role_data.nice_mapping.notes != "" %}
+  <span class="nice-note">{{ role_data.nice_mapping.notes }}</span>
+  {% endif %}
+</div>
+{% endif %}
+
+<div class="table-responsive">
+<table class="role-table">
+  <thead>
+    <tr>
+      <th class="attribute-header">Attribute</th>
+      {% for level in role_data.levels %}
+      <th class="level-header">{{ level.title }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="attribute-name"><strong>General Description</strong></td>{% for level in role_data.levels %}<td>{{ level.general_description }}</td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Primary Responsibilities</strong></td>{% for level in role_data.levels %}<td><ul class="compact-list">{% for resp in level.primary_responsibilities %}<li>{{ resp }}</li>{% endfor %}</ul></td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Required Skills</strong></td>{% for level in role_data.levels %}<td><ul class="compact-list">{% for skill in level.required_skills %}<li>{{ skill }}</li>{% endfor %}</ul></td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Preferred Skills</strong></td>{% for level in role_data.levels %}<td><ul class="compact-list">{% for skill in level.preferred_skills %}<li>{{ skill }}</li>{% endfor %}</ul></td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Mentorship Requirements</strong></td>{% for level in role_data.levels %}<td>{{ level.mentorship_requirements }}</td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Impact Scope</strong></td>{% for level in role_data.levels %}<td>{{ level.impact_scope }}</td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Autonomy &amp; Decision Authority</strong></td>{% for level in role_data.levels %}<td>{{ level.autonomy_decision_authority }}</td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Communication &amp; Stakeholders</strong></td>{% for level in role_data.levels %}<td>{{ level.communication_stakeholder }}</td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Degree / Experience</strong></td>{% for level in role_data.levels %}<td>{{ level.degree_equivalent }}</td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Certifications</strong></td>{% for level in role_data.levels %}<td><ul class="compact-list">{% for cert in level.certifications %}<li>{{ cert }}</li>{% endfor %}</ul></td>{% endfor %}</tr>
+    <tr class="salary-row"><td class="attribute-name"><strong>Salary: US Gov't</strong></td>{% for level in role_data.levels %}<td class="salary-cell">{{ level.salary.us_government }}</td>{% endfor %}</tr>
+    <tr class="salary-row"><td class="attribute-name"><strong>Salary: US Startup</strong></td>{% for level in role_data.levels %}<td class="salary-cell">{{ level.salary.us_startup }}</td>{% endfor %}</tr>
+    <tr class="salary-row"><td class="attribute-name"><strong>Salary: US Corporate</strong></td>{% for level in role_data.levels %}<td class="salary-cell">{{ level.salary.us_corporate }}</td>{% endfor %}</tr>
+    <tr class="salary-row"><td class="attribute-name"><strong>Salary: Big Tech (Mag7)</strong></td>{% for level in role_data.levels %}<td class="salary-cell">{{ level.salary.us_bigtech }}</td>{% endfor %}</tr>
+  </tbody>
+</table>
+</div>
+
+<a href="#table-of-contents" class="back-to-top">&#8593; Back to navigation</a>
+
+</div>
+
+{% endfor %}
+
+<!-- OT Security Section -->
+<div class="domain-header domain-header--otsec">
+  <h2>Operational Technology Security (OT Security)</h2>
+  <p>ICS/SCADA security, industrial protocol protection, IT/OT convergence, and critical infrastructure defense</p>
+</div>
+
+{% for role in site.data.otsec %}
+{% assign role_data = role[1] %}
+
+<div class="table-section">
+
+<h2 id="{{ role_data.name | slugify }}">{{ role_data.name }}</h2>
+
+<p>{{ role_data.description }}</p>
+
+{% if role_data.nice_mapping %}
+<div class="nice-mapping">
+  <span class="nice-label">NICE Framework:</span>
+  {% for wr in role_data.nice_mapping.work_roles %}
+  <span class="nice-role">{{ wr.id }} {{ wr.name }}</span>
+  {% endfor %}
+  {% if role_data.nice_mapping.work_roles.size == 0 %}
+  <span class="nice-role">No direct mapping</span>
+  {% endif %}
+  <span class="nice-strength nice-strength--{{ role_data.nice_mapping.strength }}">{{ role_data.nice_mapping.strength }}</span>
+  {% if role_data.nice_mapping.notes != "" %}
+  <span class="nice-note">{{ role_data.nice_mapping.notes }}</span>
+  {% endif %}
+</div>
+{% endif %}
+
+<div class="table-responsive">
+<table class="role-table">
+  <thead>
+    <tr>
+      <th class="attribute-header">Attribute</th>
+      {% for level in role_data.levels %}
+      <th class="level-header">{{ level.title }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="attribute-name"><strong>General Description</strong></td>{% for level in role_data.levels %}<td>{{ level.general_description }}</td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Primary Responsibilities</strong></td>{% for level in role_data.levels %}<td><ul class="compact-list">{% for resp in level.primary_responsibilities %}<li>{{ resp }}</li>{% endfor %}</ul></td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Required Skills</strong></td>{% for level in role_data.levels %}<td><ul class="compact-list">{% for skill in level.required_skills %}<li>{{ skill }}</li>{% endfor %}</ul></td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Preferred Skills</strong></td>{% for level in role_data.levels %}<td><ul class="compact-list">{% for skill in level.preferred_skills %}<li>{{ skill }}</li>{% endfor %}</ul></td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Mentorship Requirements</strong></td>{% for level in role_data.levels %}<td>{{ level.mentorship_requirements }}</td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Impact Scope</strong></td>{% for level in role_data.levels %}<td>{{ level.impact_scope }}</td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Autonomy &amp; Decision Authority</strong></td>{% for level in role_data.levels %}<td>{{ level.autonomy_decision_authority }}</td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Communication &amp; Stakeholders</strong></td>{% for level in role_data.levels %}<td>{{ level.communication_stakeholder }}</td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Degree / Experience</strong></td>{% for level in role_data.levels %}<td>{{ level.degree_equivalent }}</td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Certifications</strong></td>{% for level in role_data.levels %}<td><ul class="compact-list">{% for cert in level.certifications %}<li>{{ cert }}</li>{% endfor %}</ul></td>{% endfor %}</tr>
+    <tr class="salary-row"><td class="attribute-name"><strong>Salary: US Gov't</strong></td>{% for level in role_data.levels %}<td class="salary-cell">{{ level.salary.us_government }}</td>{% endfor %}</tr>
+    <tr class="salary-row"><td class="attribute-name"><strong>Salary: US Startup</strong></td>{% for level in role_data.levels %}<td class="salary-cell">{{ level.salary.us_startup }}</td>{% endfor %}</tr>
+    <tr class="salary-row"><td class="attribute-name"><strong>Salary: US Corporate</strong></td>{% for level in role_data.levels %}<td class="salary-cell">{{ level.salary.us_corporate }}</td>{% endfor %}</tr>
+    <tr class="salary-row"><td class="attribute-name"><strong>Salary: Big Tech (Mag7)</strong></td>{% for level in role_data.levels %}<td class="salary-cell">{{ level.salary.us_bigtech }}</td>{% endfor %}</tr>
+  </tbody>
+</table>
+</div>
+
+<a href="#table-of-contents" class="back-to-top">&#8593; Back to navigation</a>
+
+</div>
+
+{% endfor %}
+
+<!-- Physical Security Section -->
+<div class="domain-header domain-header--physec">
+  <h2>Physical Security</h2>
+  <p>Converged physical-cyber security engineering, access control systems, surveillance, and facility security architecture</p>
+</div>
+
+{% for role in site.data.physec %}
+{% assign role_data = role[1] %}
+
+<div class="table-section">
+
+<h2 id="{{ role_data.name | slugify }}">{{ role_data.name }}</h2>
+
+<p>{{ role_data.description }}</p>
+
+{% if role_data.nice_mapping %}
+<div class="nice-mapping">
+  <span class="nice-label">NICE Framework:</span>
+  {% for wr in role_data.nice_mapping.work_roles %}
+  <span class="nice-role">{{ wr.id }} {{ wr.name }}</span>
+  {% endfor %}
+  {% if role_data.nice_mapping.work_roles.size == 0 %}
+  <span class="nice-role">No direct mapping</span>
+  {% endif %}
+  <span class="nice-strength nice-strength--{{ role_data.nice_mapping.strength }}">{{ role_data.nice_mapping.strength }}</span>
+  {% if role_data.nice_mapping.notes != "" %}
+  <span class="nice-note">{{ role_data.nice_mapping.notes }}</span>
+  {% endif %}
+</div>
+{% endif %}
+
+<div class="table-responsive">
+<table class="role-table">
+  <thead>
+    <tr>
+      <th class="attribute-header">Attribute</th>
+      {% for level in role_data.levels %}
+      <th class="level-header">{{ level.title }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="attribute-name"><strong>General Description</strong></td>{% for level in role_data.levels %}<td>{{ level.general_description }}</td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Primary Responsibilities</strong></td>{% for level in role_data.levels %}<td><ul class="compact-list">{% for resp in level.primary_responsibilities %}<li>{{ resp }}</li>{% endfor %}</ul></td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Required Skills</strong></td>{% for level in role_data.levels %}<td><ul class="compact-list">{% for skill in level.required_skills %}<li>{{ skill }}</li>{% endfor %}</ul></td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Preferred Skills</strong></td>{% for level in role_data.levels %}<td><ul class="compact-list">{% for skill in level.preferred_skills %}<li>{{ skill }}</li>{% endfor %}</ul></td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Mentorship Requirements</strong></td>{% for level in role_data.levels %}<td>{{ level.mentorship_requirements }}</td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Impact Scope</strong></td>{% for level in role_data.levels %}<td>{{ level.impact_scope }}</td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Autonomy &amp; Decision Authority</strong></td>{% for level in role_data.levels %}<td>{{ level.autonomy_decision_authority }}</td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Communication &amp; Stakeholders</strong></td>{% for level in role_data.levels %}<td>{{ level.communication_stakeholder }}</td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Degree / Experience</strong></td>{% for level in role_data.levels %}<td>{{ level.degree_equivalent }}</td>{% endfor %}</tr>
+    <tr><td class="attribute-name"><strong>Certifications</strong></td>{% for level in role_data.levels %}<td><ul class="compact-list">{% for cert in level.certifications %}<li>{{ cert }}</li>{% endfor %}</ul></td>{% endfor %}</tr>
+    <tr class="salary-row"><td class="attribute-name"><strong>Salary: US Gov't</strong></td>{% for level in role_data.levels %}<td class="salary-cell">{{ level.salary.us_government }}</td>{% endfor %}</tr>
+    <tr class="salary-row"><td class="attribute-name"><strong>Salary: US Startup</strong></td>{% for level in role_data.levels %}<td class="salary-cell">{{ level.salary.us_startup }}</td>{% endfor %}</tr>
+    <tr class="salary-row"><td class="attribute-name"><strong>Salary: US Corporate</strong></td>{% for level in role_data.levels %}<td class="salary-cell">{{ level.salary.us_corporate }}</td>{% endfor %}</tr>
+    <tr class="salary-row"><td class="attribute-name"><strong>Salary: Big Tech (Mag7)</strong></td>{% for level in role_data.levels %}<td class="salary-cell">{{ level.salary.us_bigtech }}</td>{% endfor %}</tr>
+  </tbody>
+</table>
+</div>
+
+<a href="#table-of-contents" class="back-to-top">&#8593; Back to navigation</a>
+
+</div>
+
+{% endfor %}
+
 <div class="footer-section" markdown="1">
 
 ## About This Framework
@@ -915,6 +1119,9 @@ This standardization framework is designed to:
 | **Cloud Security** | Cloud infrastructure, platform security, IAM | AppSec focuses on app logic; CloudSec on platform |
 | **Digital Forensics** | Evidence acquisition, artifact analysis, legal support | Supports IR with deep-dive analysis; coordinates with legal |
 | **CTI** | Threat actors, organization-specific risk, intel-driven defense | Feeds detection engineering; correlates internal data with external threats |
+| **Cyber Fraud** | Account takeover, payment fraud, BEC, transaction fraud detection | Partners with SOC on alert triage; coordinates with legal on criminal referrals |
+| **OT Security** | ICS/SCADA security, industrial protocols, IT/OT convergence | Partners with Security Engineering on network segmentation; coordinates with facilities |
+| **Physical Security** | Converged physical-cyber, access control, surveillance systems | Partners with IT on network security for physical devices; coordinates with facilities |
 
 ### Salary Notes
 
@@ -930,8 +1137,6 @@ All salary figures are estimates based on market data and may vary significantly
 
 Additional specialized roles in development:
 - Information Protection
-- OT Security
-- Physical Security
 
 ### Contributing
 

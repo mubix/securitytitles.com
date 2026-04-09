@@ -39,9 +39,12 @@ The cybersecurity industry lacks consistent standards for job titles and levels.
 
 ### Defensive Security
 - **SOC Analysts** — Security Operations Center professionals
+- **Incident Responders** — Incident investigation, containment, eradication, and recovery
 - **Security Administrators** — Security control implementation and maintenance
 - **Security Engineers** — Building and automating security solutions
 - **Security Architects** — Strategic security design and frameworks
+- **Insider Threat Analysts** — Behavioral analytics, insider risk detection, and investigation
+- **Insider Threat Engineers** — UEBA/DLP platform engineering and behavioral analytics pipelines
 - **Defensive Security Management** — Team leads through Directors
 
 ### Governance, Risk & Compliance (GRC)
@@ -49,6 +52,8 @@ The cybersecurity industry lacks consistent standards for job titles and levels.
 - **Compliance Analysts** — Regulatory compliance and audit management
 - **Governance Analysts** — Policy development and security governance
 - **GRC Engineers** — GRC platforms and automation
+- **Privacy Analysts** — Data protection compliance, PIAs, DSARs, and regulatory adherence
+- **Privacy Engineers** — Privacy-by-design implementation, consent management, and data anonymization
 
 ### Identity & Access Management (IAM)
 - **Identity Governance & Administration** — IGA strategy and implementation
@@ -69,6 +74,12 @@ The cybersecurity industry lacks consistent standards for job titles and levels.
 - **Digital Forensics Analysts** — Incident investigation and forensic analysis
 - **CTI Analysts** — Cyber Threat Intelligence research and analysis
 - **CTI Engineers** — Threat intelligence platforms and automation
+- **Fraud Analysts** — Cyber fraud detection, investigation, and prevention
+- **Fraud Engineers** — Fraud detection platforms, ML models, and real-time scoring
+- **OT Security Engineers** — ICS/SCADA security, industrial protocol protection
+- **OT Security Architects** — IT/OT convergence architecture and IEC 62443 compliance
+- **Physical Security Engineers** — Converged physical-cyber security systems engineering
+- **Physical Security Architects** — Facility security architecture and PSIM design
 
 ### Leadership
 - **Director** — Security program leadership and strategy
@@ -97,6 +108,11 @@ securitytitles.com/
 │   ├── evm.yml               # Enterprise Vulnerability Management roles
 │   ├── forensics.yml         # Digital Forensics roles
 │   ├── cti.yml               # Cyber Threat Intelligence roles
+│   ├── insider_threat.yml    # Insider Threat roles
+│   ├── fraud.yml             # Cyber Fraud roles
+│   ├── privacy.yml           # Privacy roles
+│   ├── otsec.yml             # OT Security roles
+│   ├── physec.yml            # Physical Security roles
 │   ├── leadership.yml        # Security Leadership roles
 │   └── consultant.yml        # Security Consulting, vCISO, Fractional CISO
 ├── _layouts/                 # Jekyll layout templates
